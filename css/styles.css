@@ -1,0 +1,12 @@
+.card {
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.card-img-top {
+    
+    width: 80%;
+    height: 15vw;
+    object-fit: cover;
+}
