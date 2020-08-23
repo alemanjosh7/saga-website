@@ -2,6 +2,10 @@
     background-color: rgb(52, 06, 134);
 }
 
+.Menu {
+    background-color: #346A86;
+}
+
 .blanco {
     color: #ffffff;
 }
@@ -27,5 +31,14 @@
     width: 50%;
     height: 3px;
     margin-bottom: 20px;
-    background: #457fd6;
+    background: #346A86;
+}
+
+.botonesnav {
+    margin-right: 20px;
+    margin-left: 20px;
+}
+
+.Titulo-documentación {
+    color: #346A86;
 }
