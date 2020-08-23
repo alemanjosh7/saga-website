@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 .Navbar{
     background-color: 52, 106, 134;
 }
@@ -6,4 +7,17 @@
 }
 .negro{
     color: greenyellow;
+=======
+.card {
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.card-img-top {
+    
+    width: 80%;
+    height: 15vw;
+    object-fit: cover;
+>>>>>>> c883c28af4da5ccf50e8fc2552caddd3c4d66ee6
 }
