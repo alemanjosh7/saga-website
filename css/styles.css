@@ -1,4 +1,4 @@
-.Navbar{
+.Menu{
     background-color: 52, 106, 134;
 }
 .blanco{
@@ -14,8 +14,12 @@
 }
 
 .card-img-top {
-    
+
     width: 80%;
     height: 15vw;
     object-fit: cover;
+}
+.botonesnav{
+    margin-right: 20px;
+    margin-left: 20px;
 }
