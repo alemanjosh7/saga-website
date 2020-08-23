@@ -1,12 +1,15 @@
-.Navbar{
-    background-color: 52, 106, 134;
+.navbar {
+    background-color: rgb(52, 06, 134);
 }
-.blanco{
+
+.blanco {
     color: #ffffff;
 }
-.negro{
+
+.negro {
     color: greenyellow;
 }
+
 .card {
     border: none;
     display: flex;
@@ -14,8 +17,15 @@
 }
 
 .card-img-top {
-    
+
     width: 80%;
     height: 15vw;
     object-fit: cover;
+}
+
+.divider {
+    width: 50%;
+    height: 3px;
+    margin-bottom: 20px;
+    background: #457fd6;
 }
