@@ -47,3 +47,19 @@
     text-align: justify;
     text-align-last: center;
 }
+
+.container-footer {
+    background-color: #064A70;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.col-logo img {
+    max-width: 200px;
+}
+
+.btn-footer {
+    background-color: #064A70;
+    text-align: left;
+    color: #ffffff;
+}
