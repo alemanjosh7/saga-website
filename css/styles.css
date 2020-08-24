@@ -59,5 +59,24 @@
 .card-text{
     text-align: justify;
     text-align-last: center;
+<<<<<<< HEAD
 >>>>>>> 0da1902a7dd57a2e81ef7a7e241f062c85de57b6
+=======
+}
+
+.container-footer {
+    background-color: #064A70;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.col-logo img {
+    max-width: 200px;
+}
+
+.btn-footer {
+    background-color: #064A70;
+    text-align: left;
+    color: #ffffff;
+>>>>>>> 6c54ea56cf46ca6da4466c301df415bd6d75ff1d
 }
