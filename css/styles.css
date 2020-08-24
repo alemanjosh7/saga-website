@@ -1,12 +1,15 @@
-.Menu{
+.Menu {
     background-color: #346A86;
 }
-.blanco{
+
+.blanco {
     color: #ffffff;
 }
-.negro{
+
+.negro {
     color: greenyellow;
 }
+
 .card {
     border: none;
     display: flex;
@@ -19,18 +22,22 @@
     height: 15vw;
     object-fit: cover;
 }
-.botonesnav{
+
+.botonesnav {
     margin-right: 20px;
     margin-left: 20px;
 }
-.Titulo-documentación{
-    color: #346A86 ;
+
+.Titulo-documentación {
+    color: #346A86;
     margin-bottom: 20px;
 }
-.documentacion{
+
+.documentacion {
     margin-top: 20px;
 }
-.logo{
+
+.logo {
     height: 75px;
     width: 75px;
 }
@@ -40,26 +47,31 @@
 }
 
 
-.imagen-100{
+.imagen-100 {
     width: 150px;
     height: 150px;
 }
 
-.Person-title{
+.Person-title {
     color: #0E5075;
 }
 
-.Person-subtitle{
+.Person-subtitle {
     color: #97C0D7;
 }
 
-.line-blue{
+.line-blue {
     color: #003863;
 }
 
-.contenedor{
+.contenedor {
     background-color: #0E5075;
 }
+
+.contenedor img {
+    height: 90vh;
+}
+
 
 .carousel-item {
     background: no-repeat center center scroll;
@@ -70,7 +82,7 @@
     opacity: 0.5;
 }
 
-.card-text{
+.card-text {
     text-align: justify;
     text-align-last: center;
 }
@@ -79,18 +91,18 @@
     position: relative;
     overflow: hidden;
     height: 500px;
-  }
-  
-  .parallax-container .parallax {
+}
+
+.parallax-container .parallax {
     position: absolute;
     top: 0;
     left: 0;
     right: 0;
     bottom: 0;
     z-index: -1;
-  }
-  
-  .parallax-container .parallax img {
+}
+
+.parallax-container .parallax img {
     opacity: 0;
     position: absolute;
     left: 50%;
@@ -98,11 +110,12 @@
     min-width: 100%;
     min-height: 100%;
     -webkit-transform: translate3d(0, 0, 0);
-            transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
     -webkit-transform: translateX(-50%);
-            transform: translateX(-50%);
-  }
-.card-text{
+    transform: translateX(-50%);
+}
+
+.card-text {
     text-align: justify;
     text-align-last: center;
 }
@@ -118,7 +131,25 @@
 }
 
 .btn-footer {
-    background-color: #064A70;
+    background-color: #346A86;
+
     text-align: left;
     color: #ffffff;
 }
+
+
+.divider {
+    width: 50%;
+    height: 3px;
+    margin-bottom: 20px;
+    background: #346A86;
+}
+
+.blue-text {
+    color: #346A86;
+}
+
+.blue-bg {
+    background-color: #346A86;
+}
+
