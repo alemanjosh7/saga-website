@@ -149,7 +149,11 @@
     color: #346A86;
 }
 
+.info p {
+    text-align: justify;
+
+}
+
 .blue-bg {
     background-color: #346A86;
 }
-
