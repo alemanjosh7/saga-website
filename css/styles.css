@@ -1,5 +1,6 @@
 .Menu{
     background-color: #346A86;
+    margin-bottom: 50px;
 }
 .blanco{
     color: #ffffff;
@@ -25,4 +26,12 @@
 }
 .Titulo-documentación{
     color: #346A86 ;
+    margin-bottom: 20px;
+}
+.documentacion{
+    margin-top: 20px;
+}
+.logo{
+    height: 75px;
+    width: 75px;
 }
