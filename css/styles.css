@@ -27,7 +27,14 @@
     margin-right: 20px;
     margin-left: 20px;
 }
-
+.desplegable{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.contendor-menu{
+    width: 100%;
+}
 .Titulo-documentación {
     color: #346A86;
     margin-bottom: 20px;
