@@ -33,4 +33,32 @@
 .logo{
     height: 75px;
     width: 75px;
+<<<<<<< HEAD
+=======
+}
+
+.Titulo-documentación {
+    color: #346A86;
+}
+
+.card-text{
+    text-align: justify;
+    text-align-last: center;
+}
+
+footer {
+    background-color: #064A70;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.col-logo img {
+    max-width: 200px;
+}
+
+.btn-footer {
+    background-color: #064A70;
+    text-align: left;
+    color: #ffffff;
+>>>>>>> 5e3da33ed10e92801d90d4ba25d27b5c8ac09f76
 }
