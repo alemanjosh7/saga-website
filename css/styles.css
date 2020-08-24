@@ -39,7 +39,6 @@
     margin-right: 20px;
     margin-left: 20px;
 }
-<<<<<<< HEAD
 .Titulo-documentación{
     color: #346A86 ;
     margin-bottom: 20px;
@@ -50,7 +49,7 @@
 .logo{
     height: 75px;
     width: 75px;
-=======
+}
 
 .Titulo-documentación {
     color: #346A86;
@@ -59,9 +58,6 @@
 .card-text{
     text-align: justify;
     text-align-last: center;
-<<<<<<< HEAD
->>>>>>> 0da1902a7dd57a2e81ef7a7e241f062c85de57b6
-=======
 }
 
 footer {
@@ -78,5 +74,4 @@ footer {
     background-color: #064A70;
     text-align: left;
     color: #ffffff;
->>>>>>> 6c54ea56cf46ca6da4466c301df415bd6d75ff1d
 }
