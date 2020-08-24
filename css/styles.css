@@ -1,13 +1,20 @@
-.Menu{
+.navbar {
+    background-color: rgb(52, 06, 134);
+}
+
+.Menu {
     background-color: #346A86;
     margin-bottom: 50px;
 }
-.blanco{
+
+.blanco {
     color: #ffffff;
 }
-.negro{
+
+.negro {
     color: greenyellow;
 }
+
 .card {
     border: none;
     display: flex;
@@ -20,10 +27,19 @@
     height: 15vw;
     object-fit: cover;
 }
-.botonesnav{
+
+.divider {
+    width: 50%;
+    height: 3px;
+    margin-bottom: 20px;
+    background: #346A86;
+}
+
+.botonesnav {
     margin-right: 20px;
     margin-left: 20px;
 }
+<<<<<<< HEAD
 .Titulo-documentación{
     color: #346A86 ;
     margin-bottom: 20px;
@@ -34,4 +50,14 @@
 .logo{
     height: 75px;
     width: 75px;
+=======
+
+.Titulo-documentación {
+    color: #346A86;
+}
+
+.card-text{
+    text-align: justify;
+    text-align-last: center;
+>>>>>>> 0da1902a7dd57a2e81ef7a7e241f062c85de57b6
 }
