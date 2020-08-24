@@ -27,7 +27,14 @@
     margin-right: 20px;
     margin-left: 20px;
 }
-
+.desplegable{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.contendor-menu{
+    width: 100%;
+}
 .Titulo-documentación {
     color: #346A86;
     margin-bottom: 20px;
@@ -128,13 +135,23 @@
 
 .col-logo img {
     max-width: 200px;
+    margin-left: 80px;
 }
 
 .btn-footer {
     background-color: #346A86;
-
     text-align: left;
+    margin-bottom: 15px;
+}
+
+.btn-footer a{
+    text-decoration: none;
     color: #ffffff;
+    font-size: 20px;
+}
+
+.btn-footer:hover{
+    background-color: #152B37;
 }
 
 
@@ -157,3 +174,13 @@
 .blue-bg {
     background-color: #346A86;
 }
+.col-redes {
+    margin-top: 30px;
+    margin-left: 80px;
+}
+
+.col-redes .fab {
+    margin-right: 40px;
+}
+
+
