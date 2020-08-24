@@ -11,24 +11,22 @@
 </head>
 
 <body>
-
-    <header>
-        <nav class="navbar navbar-expand-lg Menu">
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
-                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
+   <header>
+        <nav class="navbar navbar-expand-lg Menu py-0 fixed-top">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
             </button>
+            <img class = "logo rounded"src="resources/Logo.jpeg" alt="">
             <div class="collapse navbar-collapse d-flex justify-content-end" id="navbarNav">
-                <div class="co">
                     <ul class="navbar-nav">
                         <li class="nav-item active">
-                            <a class="nav-link blanco botonesnav" href="#Inicio">Inicio</a>
+                        <a class="nav-link blanco botonesnav" href="#Inicio">Inicio</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link blanco botonesnav" href="#Sobre_Nosotros">Sobre Nosotros</a>
+                        <a class="nav-link blanco botonesnav" href="#Sobre_Nosotros">Sobre Nosotros</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link blanco botonesnav" href="#Documentación">Documentación</a>
+                        <a class="nav-link blanco botonesnav" href="#Documentación">Documentación</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link blanco botonesnav" href="#Preguntas">Preguntas Frecuentes</a>
@@ -40,8 +38,8 @@
                 </div>
             </div>
         </nav>
-    </header>
-    <div class="container">
+   </header>
+    <div class="container documentacion">
         <div class="row">
             <div class="col-12 d-flex justify-content-center">
                 <h3 class="Titulo-documentación">Documentación</h3>
@@ -79,10 +77,6 @@
                     <img class="card-img-top rounded-circle" src="./resources/img-people.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Josué Alemán</h5>
-                        <p>Fullstack Developer</p>
-                        <div class="row d-flex justify-content-center">
-                            <div class="divider"></div>
-                        </div>
                         <p class="card-text">Estudiante Olímpico de Informática
                             Competitiva de El Salvador y entusiasta
                             de las tecnologías, sobre todo se
@@ -97,10 +91,6 @@
                     <img class="card-img-top rounded-circle" src="./resources/img-people.jpg" alt="Card image cap">
                     <div class="card-body">
                         <h5 class="card-title">Oliver Erazo</h5>
-                        <p>Backend Developer</p>
-                        <div class="row d-flex justify-content-center">
-                            <div class="divider"></div>
-                        </div>
                         <p class="card-text">Se interesa por aprender cosas nuevas y el
                             mundo de la programación, una nueva
                             motivación para seguir aprendiendo más
@@ -112,108 +102,32 @@
         </div>
     </div>
     <div class="row m-5">
-        <div class="card-deck d-flex align-content-center justify-content-center align-item-center">
+        <div class="card-deck d-flex align-content-center justify-content-center align-item-center"">
             <div class=" col-3 mr-5">
-                <div class="card text-center">
-                    <img class="card-img-top rounded-circle" src="./resources/img-people.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">Oscar Orellana</h5>
-                        <p>Frontend Developer</p>
-                        <div class="row d-flex justify-content-center">
-                            <div class="divider"></div>
-                        </div>
-                        <p class="card-text">
-                            Desde siempre muy enfocado en el diseño y la parte gráfica de las cosas, en éste caso, en
-                            los sitios web y las aplicaciones elaboradas. Ve el desarrollo de Software como una
-                            herramienta complementaria muy importante y útil para su futuro
-                        </p>
-                    </div>
+            <div class="card text-center">
+                <img class="card-img-top rounded-circle" src="./resources/img-people.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">Oscar Orellana</h5>
+                    <p class="card-text">This is a longer card with supporting text below as a natural lead-in
+                        to
+                        additional
+                        content. This content is a little bit longer.</p>
                 </div>
             </div>
-            <div class="col-3 ml-5">
-                <div class="card text-center">
-                    <img class="card-img-top rounded-circle" src="./resources/img-people.jpg" alt="Card image cap">
-                    <div class="card-body">
-                        <h5 class="card-title">César Flores</h5>
-                        <p>Backend Developer</p>
-                        <div class="row d-flex justify-content-center">
-                            <div class="divider"></div>
-                        </div>
-                        <p class="card-text">Estudiante Olímpico de informática Competitiva de El Salvador, participante
-                            de la IOI 2020, ganador de una medalla de bronce en la CIIC 2019, estudiante del Ricaldone
-                            en desarrollo de software, busca cambiar el mundo con el poder de la programación.</p>
-                    </div>
+        </div>
+        <div class="col-3 ml-5">
+            <div class="card text-center">
+                <img class="card-img-top rounded-circle" src="./resources/img-people.jpg" alt="Card image cap">
+                <div class="card-body">
+                    <h5 class="card-title">César Flores</h5>
+                    <p class="card-text">This card has supporting text below as a natural lead-in to additional
+                        content.</p>
                 </div>
             </div>
         </div>
     </div>
     </div>
-
-    <footer>
-
-            <div class="row align-items-center">  <!--Fila principal-->
-
-                <div class="col-6"> <!--Columna Izq-->
-
-                    <div class="row"> <!--Fila Logo y Menú-->
-
-                        <div class="col-6 col-logo">
-                            <img src="resources/logo.jpeg" alt="Logo" >
-                        </div>
-
-                        <div class="col-6"> <!--Botones-->
-                            <div class="btn-group-vertical">
-                                <button type="button" class="btn btn-footer">Inicio</button>
-                                <button type="button" class="btn btn-footer">Descargar</button>
-                                <button type="button" class="btn btn-footer">Documentación</button>
-                                <button type="button" class="btn btn-footer">Sobre Nosotros</button>
-                            </div>
-                        </div>
-
-                        <div class="col"> 
-                            <i class="fab fa-facebook"></i>
-                            <i class="fab fa-instagram"></i>
-                            <i class="fab fa-twitter"></i>
-                            <i class="fab fa-youtube"></i>
-                        </div>
-
-                    </div>
-                    
-                </div>
-
-                <div class="col-6 col-form"> <!--Columna Der-->
-                    <h3>¡Contáctanos!</h3>
-                    <form>
-
-                        <div class="form-group">
-                          <input type="text" class="form-control" id="nombreForm" placeholder="Nombre">
-                        </div>
-
-                        <div class="form-group">
-                          <input type="text" class="form-control" id="apellidoForm" placeholder="Apellido">
-                        </div>
-
-                        <div class="form-group">
-                            <input type="email" class="form-control" id="emailForm" placeholder="Correo electrónico">
-                        </div>
-
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="telefonoForm" placeholder="Teléfono">
-                        </div>
-
-                        <div class="form-group">
-                            <input type="text" class="form-control" id="mensajeForm" placeholder="Ingrese su mensaje">
-                        </div>
-
-                          <div class="form-group">
-                        <button type="submit" class="btn btn-primary">Enviar</button>
-                          </div>
-
-                      </form>
-                </div> 
-
-            </div>
-    </footer>
+    </div>
 
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
         integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
@@ -225,7 +139,6 @@
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
     <script src="js/app.js"></script>
-    <script src="https://kit.fontawesome.com/b7f8e54f5d.js" crossorigin="anonymous"></script>
 </body>
 
 </html>
