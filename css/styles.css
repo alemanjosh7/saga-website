@@ -42,3 +42,8 @@
 .Titulo-documentación {
     color: #346A86;
 }
+
+.card-text{
+    text-align: justify;
+    text-align-last: center;
+}
