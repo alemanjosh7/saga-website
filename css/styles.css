@@ -27,14 +27,17 @@
     margin-right: 20px;
     margin-left: 20px;
 }
-.desplegable{
+
+.desplegable {
     display: flex;
     flex-direction: row;
     justify-content: flex-end;
 }
-.contendor-menu{
+
+.contendor-menu {
     width: 100%;
 }
+
 .Titulo-documentación {
     color: #346A86;
     margin-bottom: 20px;
@@ -71,12 +74,14 @@
     color: #003863;
 }
 
-.contenedor {
-    background-color: #0E5075;
+.carousel-aux {
+    background-color: #003863;
 }
 
-.contenedor img {
-    height: 90vh;
+.carousel-aux img {
+    height: 100vh;
+    width: 100%;
+
 }
 
 
@@ -144,13 +149,13 @@
     margin-bottom: 15px;
 }
 
-.btn-footer a{
+.btn-footer a {
     text-decoration: none;
     color: #ffffff;
     font-size: 20px;
 }
 
-.btn-footer:hover{
+.btn-footer:hover {
     background-color: #152B37;
 }
 
@@ -174,6 +179,7 @@
 .blue-bg {
     background-color: #346A86;
 }
+
 .col-redes {
     margin-top: 30px;
     margin-left: 80px;
@@ -183,4 +189,77 @@
     margin-right: 40px;
 }
 
+* {
+    margin: 0;
+    padding: 0;
+}
 
+.wave-container {
+    position: relative;
+    width: 100%;
+    height: 100vh;
+    /* background: rgb(75, 98, 199); */
+    overflow: hidden;
+}
+
+.wave-container .wave {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 100px;
+    background: url("../resources/wave.png");
+    background-size: 1000px 100px;
+}
+
+.wave-container .wave.wave1 {
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+
+.wave-container .wave.wave2 {
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: .5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+
+.wave-container .wave.wave3 {
+    animation: animate 30s linear infinite;
+    z-index: 998;
+    opacity: .7;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+
+.wave-container .wave.wave4 {
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: .7;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+
+@keyframes animate {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: 1000px;
+    }
+}
+
+@keyframes animate2 {
+    0% {
+        background-position-x: 0;
+    }
+
+    100% {
+        background-position-x: -1000px;
+    }
+}
