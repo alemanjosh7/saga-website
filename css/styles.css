@@ -1,14 +1,116 @@
-.Menu {
-    background-color: #346A86;
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
+
+
+/*inico del nabvar*/
+.titulo{
+    margin-left: 15px;
+    margin-top: 15px;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+}
+.logo {
+    height: 75px;
+    width: 75px;
+}
+.botonesnav {
+    margin-right: 15px;
+    margin-left: 15px;
+    font-size: 11pt;
+    color: black;
+    font-family: 'Nunito', sans-serif;
+}
+.desplegable{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+}
+.contendor-menu{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    width: 100%;
 }
 
-.blanco {
-    color: #ffffff;
+ 
+@media (max-width: 1000px) {
+    .contendor-menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-start;
+        width: 100%;
+    }
+}
+@media (min-width: 1100px) {
+    .contendor-menu{
+        display: flex;
+        flex-direction: row;
+        justify-content: flex-end;
+        width: 100%;
+    }
 }
 
-.negro {
-    color: greenyellow;
+.bg-menu {
+    background-color: white;
+  }
+  
+  a.bg-menu:hover, a.bg-light:focus,
+  button.bg-light:hover,
+  button.bg-light:focus {
+    background-color: #dae0e5 !important;
+  }
+.navbar-menu .navbar-brand {
+    color: #000000;
+  }
+  
+  
+  .navbar-menu .navbar-nav .nav-link {
+    color:  #FFFFFF;
+  }
+  
+  .navbar-menu .navbar-nav .nav-link:hover, .navbar-menu .navbar-nav .nav-link:focus {
+    color: #DADAFF;
+  }
+  
+  .navbar-menu .navbar-toggler {
+    color: #24A7F5;
+    border-color:  #000000 ;
+  }
+  
+  .navbar-menu .navbar-toggler-icon {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='40' height='40' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 0.5%29' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+  }
+  
+
+/*fin navbar*/
+
+/*Titulo documentacion*/
+.Titulo-documentación {
+    color: #346A86;
+    margin-bottom: 20px;
 }
+/*Fin titulo documentación*/
+/*Documentacion botones*/
+.botones-documentacion{
+    margin-top: 5px;
+}
+@media (max-width: 1000px) {
+    .documentacion {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: column;
+    }
+}
+@media (min-width: 1100px) {
+    .documentacion {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+}
+/*fin documentacion botones*/
+
+
 
 .card {
     border: none;
@@ -22,33 +124,6 @@
     height: 15vw;
     object-fit: cover;
 }
-
-.botonesnav {
-    margin-right: 20px;
-    margin-left: 20px;
-}
-.desplegable{
-    display: flex;
-    flex-direction: row;
-    justify-content: flex-end;
-}
-.contendor-menu{
-    width: 100%;
-}
-.Titulo-documentación {
-    color: #346A86;
-    margin-bottom: 20px;
-}
-
-.documentacion {
-    margin-top: 20px;
-}
-
-.logo {
-    height: 75px;
-    width: 75px;
-}
-
 .Titulo-documentación {
     color: #346A86;
 }
