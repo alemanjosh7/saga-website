@@ -1,11 +1,3 @@
-.Menu {
-    background-color: #346A86;
-}
-
-.blanco {
-    color: #ffffff;
-}
-
 .negro {
     color: greenyellow;
 }
@@ -27,6 +19,8 @@
     margin-right: 20px;
     margin-left: 20px;
 }
+
+
 
 .desplegable {
     display: flex;
@@ -74,24 +68,53 @@
     color: #003863;
 }
 
-.carousel-aux {
-    background-color: #003863;
-}
-
-.carousel-aux img {
+.carousel {
     height: 100vh;
-    width: 100%;
 
 }
 
 
-.carousel-item {
-    background: no-repeat center center scroll;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    -o-background-size: cover;
+.hero-carousel .carousel-item .carousel-image {
+    transform: scale(1) translateX(0);
+    transition: all 0.6s;
+}
+
+.hero-carousel .carousel-item.carousel-item-next .carousel-image,
+.hero-carousel .carousel-item.active.carousel-item-right .carousel-image {
+    transform: scale(1.3) translateX(-50%);
+}
+
+.hero-carousel .carousel-item.carousel-item-prev .carousel-image,
+.hero-carousel .carousel-item.active.carousel-item-left .carousel-image {
+    transform: scale(1.3) translateX(50%);
+}
+
+.hero-carousel .carousel-item.carousel-item-next.carousel-item-left .carousel-image,
+.hero-carousel .carousel-item.carousel-item-prev.carousel-item-right .carousel-image {
+    /*transform: scale(1);*/
+    transform: scale(1) translateX(0);
+}
+
+
+/* Makes carousel full screen */
+.hero-carousel .carousel-item {
+    height: 100vh;
+    overflow: hidden;
+}
+
+.hero-carousel .carousel-item .carousel-image {
+    height: 100vh;
+    background-position: center center;
+    background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.5;
+    filter: brightness(60%);
+}
+
+/* Ignore this CSS */
+#carouselExampleIndicators {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .card-text {
@@ -99,33 +122,6 @@
     text-align-last: center;
 }
 
-.parallax-container {
-    position: relative;
-    overflow: hidden;
-    height: 500px;
-}
-
-.parallax-container .parallax {
-    position: absolute;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: -1;
-}
-
-.parallax-container .parallax img {
-    opacity: 0;
-    position: absolute;
-    left: 50%;
-    bottom: 0;
-    min-width: 100%;
-    min-height: 100%;
-    -webkit-transform: translate3d(0, 0, 0);
-    transform: translate3d(0, 0, 0);
-    -webkit-transform: translateX(-50%);
-    transform: translateX(-50%);
-}
 
 .card-text {
     text-align: justify;
