@@ -94,11 +94,22 @@
 .botones-documentacion{
     margin-top: 5px;
 }
-@media (max-width: 1000px) {
+.documentacion {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    width: 100%;
+}
+
+/*@media (max-width: 1000px) {
     .documentacion {
         margin-top: 20px;
         display: flex;
         flex-direction: column;
+        justify-content: space-between;
+        width: 900px;
+        background: green;
     }
 }
 @media (min-width: 1100px) {
@@ -109,6 +120,7 @@
         justify-content: space-between;
     }
 }
+*/
 /*fin documentacion botones*/
 
 
@@ -120,7 +132,6 @@
 }
 
 .card-img-top {
-
     width: 80%;
     height: 15vw;
     object-fit: cover;
