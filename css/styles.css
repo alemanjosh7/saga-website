@@ -94,6 +94,17 @@
 .botones-documentacion{
     margin-top: 5px;
 }
+.btn-documentacion {
+    color: #0069d9;
+    background-color: #FFFFFF;
+    border-color: #007bff;
+  }
+  
+  .btn-documentacion:hover {
+    color: #fff;
+    background-color: #0069d9;
+    border-color: #0062cc;
+  }
 .documentacion {
     margin-top: 20px;
     display: flex;
