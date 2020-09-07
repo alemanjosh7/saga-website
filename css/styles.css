@@ -18,7 +18,14 @@
     margin-left: 15px;
     font-size: 11pt;
     color: black;
+    background: transparent;
+    border: none;
     font-family: 'Nunito', sans-serif;
+    text-decoration: none;
+}
+.botonesnav:hover{
+    text-decoration: none;
+    color: #3431C1;
 }
 .desplegable{
     display: flex;
@@ -373,9 +380,7 @@
 }
 .waveAnimation .waveTop {
   animation: move-wave 3s;
-   -webkit-animation: move-wave 3s;
-   -webkit-animation-delay: 1s;
-   animation-delay: 1s;
+
 }
 .waveMiddle {
     background-size: 50% 120px;
