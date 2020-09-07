@@ -33,7 +33,7 @@
 }
 
  
-@media (max-width: 1000px) {
+@media (max-width: 999px) {
     .contendor-menu{
         display: flex;
         flex-direction: row;
@@ -41,7 +41,7 @@
         width: 100%;
     }
 }
-@media (min-width: 1100px) {
+@media (min-width: 1000px) {
     .contendor-menu{
         display: flex;
         flex-direction: row;
@@ -106,7 +106,43 @@
     width: 100%;
 }
 
+@media (max-width: 1099px) {
+    .documentacion {
+        margin-top: 20px;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
+    .btn-documentacion{
+        margin-bottom: 5px  ;
+        width: 100%;
+        color: #0062cc;
+        background-color: #ffffff;
+        border-color: #0062cc;
+      }
+      .li-boton{
+        width: 100%;
+      }
+      
+}
+@media (min-width: 1100px) {
+    .documentacion {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+        .btn-documentacion{
+        width: 150px;
+        color: #0062cc;
+        background-color: #ffffff;
+        border-color: #0062cc;
+      }
 
+}
 
 /*fin documentacion botones*/
 
