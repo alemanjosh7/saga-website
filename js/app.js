@@ -23,3 +23,11 @@ $(document).ready(function() {
     }
   }
 });
+
+
+var skewed = document.querySelector(".skewed");
+
+window.addEventListener('scroll', function(){
+  var value = window.scrollY;
+  skewed.style.transform = "skewY("+ value+"deg)";
+})
