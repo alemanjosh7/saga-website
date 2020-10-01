@@ -1,12 +1,53 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
 
+/*Animaciones navbar*/
+.botonesnav:hover{
+    padding: 5px;
+    text-decoration: none;
+    color: white;
+    background: #6BCCCE;
+    border-radius: 25px;
+    -webkit-animation: botonNav 0.5s 1 linear 0.01s;
+    background-position: 0;
+}
+@-webkit-keyframes botonNav{
+    0%{-webkit-transform: rotate(0deg) ;}
+    40%{-webkit-transform: rotate(5deg);}
+    80%{-webkit-transform: rotate(-5deg);}
+    100%{-webkit-transform: rotate(0deg);}
+}
+@-webkit-keyframes imagen_descargar{
+    0%{-webkit-transform: scale(1) ;}
+    25%{-webkit-transform: scale(0.95);}
+    0%{-webkit-box-shadow: 0px 0px 7px 7px #ec731e;}
+    50%{-webkit-transform: scale(1) ;}
+    75%{-webkit-transform: scale(1.05) ;}
+    90%{-webkit-transform: scale(1);}
+}
+.titulo:hover{
+    color: transparent;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #6BCCCE, #6B9BCE, #6D6BCE,#9E6BCE, #CE6BCC, #CE6B9B);
+    -webkit-background-clip: text;
+    animation: tituloNav 7s linear infinite 1s;
+    background-size: 1000%;
+}
 
+@keyframes tituloNav{
+    0%{ background-position: 0% 100%;}
+    40%{ background-position: 100% 0%;}
+    80%{background-position: 0% 100%;}
+    100%{background-position: 100% 0%;}
+}
+/*Fin animaciones navbar*/
 /*inico del nabvar*/
 .titulo{
     margin-left: 15px;
     margin-top: 15px;
     color: black;
     font-family: 'Nunito', sans-serif;
+    font-size: 35pt;
+
 }
 
 .logo {
@@ -14,18 +55,25 @@
     width: 75px;
 }
 .botonesnav {
+    text-decoration: none;
+    padding: 5px;
+    border-radius: 25px;
     margin-right: 15px;
     margin-left: 15px;
     font-size: 11pt;
     color: black;
-    background: transparent;
     border: none;
     font-family: 'Nunito', sans-serif;
-    text-decoration: none;
+    background-image: -webkit-linear-gradient(45deg, #6BCCCE 50%, transparent 50%);
+    background-image: linear-gradient(45deg, #49AAAC 50%, transparent 50%);
+    background-position: 200%;
+    background-size: 500%;
+    -webkit-transition: background 1000ms ease-in-out;
+    transition: background 500ms ease-in-out;
 }
-.botonesnav:hover{
-    text-decoration: none;
-    color: #3431C1;
+.img-descarga:hover{
+    -webkit-animation: imagen_descargar 0.7s 1 linear 0.1s;
+    
 }
 .desplegable{
     display: flex;
@@ -38,13 +86,54 @@
     justify-content: flex-end;
     width: 100%;
 }
+#botones-animacion{
+ position: relative;
+ padding: 25px 50px;
+ text-decoration: none;
+ color: white;
+ font-size: 2em;
+ letter-spacing: 4px;
+ text-transform: uppercase;
+ overflow: hidden;
+ background: rgba(255,255,255,0.5);
+ box-shadow: 0 5px 5px rgba(0,0,0,0.2);
+}
+#botones-animacion:before{
+ content: '';
+ position: absolute;
+ top: 0;
+ left: 0;
+ width: 50%;
+ height: 100%;
+ background: rgba(255,255,255,0.1);
+}
+#botones-animacion:after{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(90deg,transparent, rgba(255, 255, 255,0.5),transparent);
+    transition: 0.5s;
+}
+#botones-animacion:hover:after{
+left: 100%;
+}
 
- 
 @media (max-width: 999px) {
     .contendor-menu{
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
+        width: 100%;
+    }
+    .botonesnav{
+        margin: 3px;
+        width: 100%;
+        text-align: center;
+    }
+    .Contendor-navbar{
         width: 100%;
     }
 }
@@ -55,30 +144,11 @@
         justify-content: flex-end;
         width: 100%;
     }
+    .Contendor-navbar{
+        width: auto;
+    }
 }
 
-.bg-menu {
-    background-color: white;
-  }
-  
-  a.bg-menu:hover, a.bg-light:focus,
-  button.bg-light:hover,
-  button.bg-light:focus {
-    background-color: #dae0e5;
-  }
-.navbar-menu .navbar-brand {
-    color: #000000;
-  }
-  
-  
-  .navbar-menu .navbar-nav .nav-link {
-    color:  #FFFFFF;
-  }
-  
-  .navbar-menu .navbar-nav .nav-link:hover, .navbar-menu .navbar-nav .nav-link:focus {
-    color: #DADAFF;
-  }
-  
   .navbar-menu .navbar-toggler {
     color: #24A7F5;
     border-color:  #000000 ;
@@ -154,7 +224,9 @@
 /*fin documentacion botones*/
 
 
-
+#descargar{
+    background: black;
+}
 .card {
     border: none;
     display: flex;
