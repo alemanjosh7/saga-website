@@ -19,8 +19,8 @@
 .titulo:hover{
     color: transparent;
     text-transform: uppercase;
-    background-image: linear-gradient(to right, #0062CC, #0400CC, #6A00CC,#CC00C8, #CC0062, #CC0400);
-    background-clip: text;
+    background-image: linear-gradient(to right, #6BCCCE, #6B9BCE, #6D6BCE,#9E6BCE, #CE6BCC, #CE6B9B);
+    -webkit-background-clip: text;
     animation: tituloNav 7s linear infinite 1s;
     background-size: 1000%;
 }
@@ -33,7 +33,7 @@
 }
 /*Fin animaciones navbar*/
 /*inico del nabvar*/
-.titulo {
+.titulo{
     margin-left: 15px;
     margin-top: 15px;
     color: black;
@@ -190,15 +190,90 @@ h1 {
 /*Fin titulo documentación*/
 /*Documentacion botones*/
 
+.contenedor-boton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.boton-informacion{
+	position: relative;
+	padding: 25px 10px;
+	border-radius: 6px;
+	text-align: center;
+	max-width: 320px;
+	height: auto;
+	margin-bottom: 60px;
+	overflow: hidden;
+	color:rgba(255,255,255,1);
+	cursor: pointer;
+	letter-spacing: 2px;
+	box-shadow:inset 0 0 0 1px rgba(0,0,0,0.1);
+	text-decoration: none;
+	transition: all ease 0.5s;
+	background:#007BFF;
+}
 
-.btn-documentacion:hover {
-    color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
+.boton-informacion:after,
+.boton-informacion:before{
+    
+	width: 80px;
+	height: 200px;
+	content: '';
+	background: rgba(255,255,255,0.5);
+	transform: rotate(45deg);
+	top: -60px;
+	position: absolute;
+	transition: none;
+	right:-80%;
+	cursor: pointer;
+}
+
+.boton-informacion:before{
+	left: -80%;
+}
+
+.boton-informacion:hover{
+    color: white;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+	background:#005BFF
+}
+
+.boton-informacion:hover:after,
+.boton-informacion:hover:before{
+	transform: rotate(45deg), scaleX(130%);
+	background: rgba(255,255,255,0.1);
+	transition: all ease 0.5s;
+}
+
+.boton-informacion:hover:after{
+	right: 150%;
+}
+
+.boton-informacion:hover:before{
+	left: 150%;
+}
+@-webkit-keyframes boton{
+    0%{-webkit-transform: scale(0.98)}
+    0%{box-shadow: 0px 0px 5px 5px #3B5FA9};
 }
 
 .documentacion {
     border: 1px solid black;
+}
+.boton-spy {
+    color: #FFF;
+    background: #007BFF;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #0BF;
+    -webkit-transition: all ease 0.8s;
+    -moz-transition: all ease 0.8s;
+    transition: all ease 0.8s;
+}
+.boton-spy:hover {
+    box-shadow: inset 0 70px 0 0 #08B;
 }
 
 @media (max-width: 1099px) {
@@ -230,14 +305,13 @@ h1 {
 }
 .boton-descarga:hover{
     animation: pulsar 5s linear infinite 0s;
-    color: -webkit-linear-gradient(45deg, #0042AC 50%, transparent 50%);
     box-shadow:0px 0px 15px 15px transparent;
 
 
 }
 @-webkit-keyframes pulsar{
     0%{-webkit-transform: scale(0.98)}
-    0%{box-shadow: 0px 0px 5px 5px #0042AC};
+    0%{box-shadow: 0px 0px 5px 5px #3B5FA9};
 }
 
 
