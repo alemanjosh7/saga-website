@@ -111,11 +111,12 @@ h1 {
 }
 
 .botonesnav {
+    text-align: center;
     text-decoration: none;
     padding: 10px;
     border-radius: 25px;
-    margin-right: 15px;
-    margin-left: 15px;
+    margin-right: 10px;
+    margin-left: 10px;
     font-size: 11pt;
     color: black;
     border: none;
@@ -146,7 +147,7 @@ h1 {
     justify-content: flex-end;
     width: 100%;
 }
-@media (max-width: 999px) {
+@media (max-width: 990px) {
     .contendor-menu {
         display: flex;
         flex-direction: row;
@@ -162,8 +163,15 @@ h1 {
         width: 100%;
     }
 }
+@media (max-width: 1090px) {
+    .botonesnav{
+        padding: 5px 3px;
+        margin-right: 7px;
+        margin-left: 7px;
 
-@media (min-width: 1000px) {
+    }
+}
+@media (min-width: 1200px) {
     .contendor-menu {
         display: flex;
         flex-direction: row;
@@ -261,6 +269,7 @@ h1 {
 }
 */
 .boton-animado{
+    text-align: center;
     position: relative;
     display: inline-block;
     padding: 10px 30px;
@@ -353,6 +362,7 @@ h1 {
 .documentacion {
     border: 1px solid black;
 }
+
 .boton-spy {
     color: #FFF;
     background: #007BFF;
