@@ -16,15 +16,6 @@
     80%{-webkit-transform: rotate(-5deg);}
     100%{-webkit-transform: rotate(0deg);}
 }
-/*@-webkit-keyframes imagen_descargar{
-    0%{-webkit-transform: scale(1) ;}
-    25%{-webkit-transform: scale(0.95);}
-    0%{-webkit-box-shadow: 0px 0px 7px 7px #ec731e;}
-    50%{-webkit-transform: scale(1) ;}
-    75%{-webkit-transform: scale(1.05) ;}
-    90%{-webkit-transform: scale(1);}
-}
-*/
 .titulo:hover{
     color: transparent;
     text-transform: uppercase;
@@ -134,11 +125,7 @@ h1 {
     -webkit-transition: background 1000ms ease-in-out;
     transition: background 500ms ease-in-out;
 }
-/*
-.img-descarga:hover{
-    -webkit-animation: imagen_descargar 0.7s 1 linear 0.1s;
-    }
-    */
+
 
 
 .desplegable {
@@ -153,42 +140,6 @@ h1 {
     justify-content: flex-end;
     width: 100%;
 }
-/*
-#botones-animacion{
- position: relative;
- padding: 25px 50px;
- text-decoration: none;
- color: white;
- font-size: 2em;
- letter-spacing: 4px;
- text-transform: uppercase;
- overflow: hidden;
- background: rgba(255,255,255,0.5);
- box-shadow: 0 5px 5px rgba(0,0,0,0.2);
-}
-#botones-animacion:before{
- content: '';
- position: absolute;
- top: 0;
- left: 0;
- width: 50%;
- height: 100%;
- background: rgba(255,255,255,0.1);
-}
-#botones-animacion:after{
-    content: '';
-    position: absolute;
-    top: 0;
-    left: -100%;
-    width: 100%;
-    height: 100%;
-    background: linear-gradient(90deg,transparent, rgba(255, 255, 255,0.5),transparent);
-    transition: 0.5s;
-}
-#botones-animacion:hover:after{
-left: 100%;
-}
-*/
 @media (max-width: 999px) {
     .contendor-menu {
         display: flex;
@@ -274,6 +225,21 @@ left: 100%;
     }
 
 }
+.boton-descarga{
+    transition: box-shadow 0.2s ease-in-out;
+}
+.boton-descarga:hover{
+    animation: pulsar 5s linear infinite 0s;
+    color: -webkit-linear-gradient(45deg, #0042AC 50%, transparent 50%);
+    box-shadow:0px 0px 15px 15px transparent;
+
+
+}
+@-webkit-keyframes pulsar{
+    0%{-webkit-transform: scale(0.98)}
+    0%{box-shadow: 0px 0px 5px 5px #0042AC};
+}
+
 
 @media (min-width: 1100px) {
     .documentacion {
