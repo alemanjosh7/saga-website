@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
 
+html{
+    scroll-behavior: smooth;
+}
+
 /*inico del nabvar*/
 .titulo {
     margin-left: 15px;
@@ -409,34 +413,6 @@ blockquote {
     margin: 20px auto 5px;
 }
 
-.footer {
-    background-color: #064A70;
-    color: #ffffff;
-    padding: 20px;
-}
-
-.col-logo img {
-    max-width: 200px;
-    margin-left: 80px;
-}
-
-.btn-footer {
-    background-color: #346A86;
-    text-align: left;
-    margin-bottom: 15px;
-}
-
-.btn-footer a {
-    text-decoration: none;
-    color: #ffffff;
-    font-size: 20px;
-}
-
-.btn-footer:hover {
-    background-color: #152B37;
-}
-
-
 .divider {
     width: 50%;
     height: 3px;
@@ -501,14 +477,92 @@ blockquote {
     box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.3);
 }
 
+
+/* Diseño de footer */
+
+.footer {
+    background-color: #0069d9;
+    color: #ffffff;
+    padding: 20px;
+}
+
+.col-logo img {
+    max-width: 200px;
+    display: block;
+    margin: auto;
+}
+
+.btn-footer {
+    background-color:#0069d9;
+    text-align: left;
+    margin-bottom: 15px;
+}
+
+.btn-footer a{
+    text-decoration: none;
+    color: #ffffff;
+    font-size: 20px;
+}
+
+.btn-footer:hover{
+    background-color: #152B37;
+
+    transition-property: all;
+    transition-duration: 0.3s;
+    transition-timing-function: ease-in;
+}
+
+.col-redes .fab:hover{
+    color: #054B6F;
+}
+
+
+.formulario{
+    padding: 40px;
+}
+
+@media screen and (max-width: 576){
+    
+    .col-redes .fab{
+        margin-left: -100px;
+    }
+}
+
+@media screen and (max-width: 992px){
+
+    .row-redes{
+        margin: auto;
+    }
+
+    .col-btn{
+        margin-top: 30px;
+    }
+
+    .btn-footer{
+        text-align: center;
+    }
+}
+
+.col-btn{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.footer .col-btn .col-logo .col-redes {
+    margin: 10px solid black;
+}
+
 .col-redes {
     margin-top: 30px;
-    margin-left: 80px;
 }
 
 .col-redes .fab {
     margin-right: 40px;
 }
+
+
+/* Fin de diseño de footer */
 
 .rotated {
     height: 75px;
