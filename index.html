@@ -107,7 +107,7 @@
         </div>
 
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid" id="documentacion">
         <div class="row">
             <div class="col-12 d-flex justify-content-center">
                 <h3 class="titulo-documentacion">Documentación</h3>
@@ -160,7 +160,7 @@
         </div>
     </div>
 
-    <section class="section-3 container-fluid p-0 text-center parallax">
+    <section class="section-3 container-fluid p-0 text-center parallax" id="descargar">
         <div class="row">
             <div class="col-md-12 col-sm-12 mt-5">
                 <h1>Lleva tu empresa de almacenamiento al siguiente nivel </h1>
@@ -190,7 +190,7 @@
 
     <!--Nuestro Equipo-->
 
-    <section class="team">
+    <section class="team" id="nuestroequipo">
         <div class="container-fluid my-3 py-5 text-center">
             <div class="row mb-5">
                 <div class="col">
@@ -496,80 +496,70 @@
             </div>
             <div class="col-1"></div>
         </div>
-
-
-
     </div>
 
-
+    <!-- Footer -->
 
     <div class="container-fluid footer blue-bg" id="Contactanos">
 
         <div class="row align-items-center">
-            <!--Fila principal-->
 
-            <div class="col-6">
-                <!--Columna Izq-->
+            <div class="col col-izq col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
 
-                <div class="row">
-                    <!--Fila Logo y Menú-->
+                <div class="row row-logo-botones align-items-center justify-content-center">
 
                     <div class="col-6 col-logo">
                         <img src="resources/logo.jpeg" alt="Logo">
                     </div>
 
-                    <div class="col-6 col-btn-footer">
-                        <!--Botones-->
-                        <div class="btn-group-vertical">
-                            <button type="button" class="btn btn-footer"><a href="#Inicio">Inicio</a></button>
-                            <button type="button" class="btn btn-footer"><a href="#descargar">Descargar</a></button>
-                            <button type="button" class="btn btn-footer"><a
-                                    href="#documentacion">Documentación</a></button>
-                            <button type="button" class="btn btn-footer"><a href="#Sobre_Nosotros">Sobre
-                                    Nosotros</a></button>
-                        </div>
+                    <div class="col-btn col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 align-item-center">
+                            <button type="button" class="btn btn-footer"><a href="#">Inicio</a></button>
+                            <button type="button" class="btn btn-footer"><a href="#documentacion">Documentación</a></button>
+                            <button type="button" class="btn btn-footer"><a href="#descargar">Descargas</a></button>
+                            <button type="button" class="btn btn-footer"><a href="#nuestroequipo">Nuestro equipo</a></button>
                     </div>
 
-                    <div class="col-6 col-redes">
+                    <div class="row row-redes justify-content-center align-items-center">
+                        <div class="col col-redes">
                         <i class="fab fa-facebook fa-2x"></i>
                         <i class="fab fa-instagram fa-2x"></i>
                         <i class="fab fa-twitter fa-2x"></i>
                         <i class="fab fa-youtube fa-2x"></i>
+                        </div>
                     </div>
 
                 </div>
 
             </div>
 
-            <div class="col-4 col-form ml-auto mr-5 formulario">
-                <!--Columna Der-->
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-form formulario">
                 <h3>¡Contáctanos!</h3>
                 <form>
-
+    
                     <div class="form-group">
-                        <input type="text" class="form-control" id="nombreForm" placeholder="Nombre">
+                        <input type="text" class="form-control" id="nombreForm" required placeholder="Nombre">
                     </div>
-
+    
                     <div class="form-group">
-                        <input type="text" class="form-control" id="apellidoForm" placeholder="Apellido">
+                        <input type="text" class="form-control" id="apellidoForm" required placeholder="Apellido">
                     </div>
-
+    
                     <div class="form-group">
-                        <input type="email" class="form-control" id="emailForm" placeholder="Correo electrónico">
+                        <input type="email" class="form-control" id="emailForm" required placeholder="Correo electrónico">
                     </div>
-
+    
                     <div class="form-group">
-                        <input type="text" class="form-control" id="telefonoForm" placeholder="Teléfono">
+                        <input type="text" class="form-control" id="telefonoForm" required placeholder="Número de teléfono">
                     </div>
-
+    
                     <div class="form-group">
-                        <input type="ar" class="form-control" id="mensajeForm" placeholder="Ingrese su mensaje">
+                        <textarea name="mensaje" class="form-control" id="msgForm" cols="88" rows="3" required placeholder="Ingrese su mensaje"></textarea>
                     </div>
-
+    
                     <div class="form-group">
-                        <button type="submit" class="boton-animado">Enviar</button>
+                        <button type="submit" class="btn btn-primary" id="btnForm">Enviar</button>
                     </div>
-
+    
                 </form>
             </div>
 
