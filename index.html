@@ -28,18 +28,18 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <div class="d-flex contendor-menu">
-                    <ul class="navbar-nav mt-2 mt-lg">
-                        <li class="nav-item">
+                    <ul class="navbar-nav mt-2 mt-lg Contendor-navbar">
+                        <li class="nav-item contendor-li">
                             <a type="button" class="botonesnav" href="#Inicio">INICIO</a>
                         </li>
                         <li class="nav-item">
-                            <a type="button" class=" botonesnav" href="#Sobre_Nosotros">SOBRE NOSOTROS</a>
+                            <a type="button" class="botonesnav" href="#Sobre_Nosotros">SOBRE NOSOTROS</a>
                         </li>
                         <li class="nav-item">
-                            <a type="button" class=" botonesnav" href="#documentacion">DOCUMENTACIÓN</a>
+                            <a type="button" class="botonesnav" href="#documentacion">DOCUMENTACIÓN</a>
                         </li>
                         <li class="nav-item">
-                            <a type="button" class=" botonesnav" href="#Preguntas">PREGUNTAS FRECUENTES</a>
+                            <a type="button" class="botonesnav" href="#Preguntas">PREGUNTAS FRECUENTES</a>
                         </li>
                         <li class="nav-item">
                             <a type="button" class="botonesnav" href="#Contactanos">CONTÁCTANOS</a>
@@ -48,23 +48,21 @@
                 </div>
             </div>
         </nav>
-
         <div class="contenedor tope mb-5">
             <div id="carouselControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="resources/img1.jpg" alt="Transporte">
+                        <img class="d-block w-100" src="resources/bodegas.jpg" alt="Transporte">
                     </div>
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="resources/img2.jpg" alt="Seguridad">
+                        <img class="d-block w-100" src="resources/almacen.jpg" alt="Seguridad">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="resources/img3.jpg" alt="Trabajadores">
+                        <img class="d-block w-100" src="resources/cajas.jpg" alt="Trabajadores">
                     </div>
                 </div>
-
                 <div class="waveWrapper waveAnimation">
-                    <div class=" bgTop">
+                    <div class="bgTop">
                         <div class="wave waveTop" style="background-image: url(resources/wave.png)"></div>
                     </div>
                     <div class="bgMiddle">
@@ -74,7 +72,6 @@
                         <div class="wave waveBottom" style="background-image: url(resources/wave.png)"></div>
                     </div>
                 </div>
-
                 <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
@@ -86,7 +83,8 @@
             </div>
         </div>
 
-        <div id="Inicio" class="jumbotron h-100 text-center mb-5 mt-5 pt-5 pb-5" style="background-color: #243DAAD0;">
+
+        <div id="Inicio" class="jumbotron h-100 text-center mb-5 mt-5 pt-5 pb-5 inicio">
             <div class="text-light">
                 <h1 class="display-4 mt-3">Lleva tu empresa de almacenamiento al siguiente nivel</h1>
                 <p class="lead mt-4">Con SAGA puedes facilmente organizar todo acerca de espacios, contratos,
@@ -94,8 +92,15 @@
                 <hr class="my-4 mt-2">
                 <p>Para más información click aquí
                 </p>
-                <p class="lead">
-                    <a class="btn btn-primary btn-lg mt-4" href="#documentacion" role="button">Documentación</a>
+                <p class="lead contenedor-boton">
+                    <a class="boton-animado" href="#documentacion" role="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <i class="fas fa-file-alt fa-2x py-2 pr-2"></i>
+                        Documentación
+                    </a>
                 </p>
             </div>
 
@@ -109,15 +114,31 @@
             </div>
         </div>
         <div class="row documentacion">
-            <div class="col-3 d-flex flex-column align-items-center justify-content-center">
-                <div id="list-example" class="list-group">
-                    <a class="list-group-item list-group-item-action mt-3" href="#list-item-1">Item 1</a>
-                    <a class="list-group-item list-group-item-action mt-3" href="#list-item-2">Item2</a>
-                    <a class="list-group-item list-group-item-action mt-3" href="#list-item-3">Item 3</a>
-                    <a class="list-group-item list-group-item-action mt-3" href="#list-item-4">Item 4</a>
+            <div class="col-3 d-flex flex-column align-items-center justify-content-center col-12 col-md-3">
+                <div id="list-example" class="list-group grupo">
+                    <a class="mt-3 boton-animado" href="#list-item-1">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>Item 1</a>
+                    <a class="mt-3 boton-animado" href="#list-item-2">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>Item2</a>
+                    <a class="mt-3 boton-animado" href="#list-item-3">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>Item 3</a>
+                    <a class=" mt-3 boton-animado" href="#list-item-4">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>Item 4</a>
                 </div>
             </div>
-            <div class="col">
+            <div class="col-12 col-md-9">
                 <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
                     <h4 id="list-item-1">Item 1</h4>
                     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam id commodi eaque saepe
@@ -151,9 +172,9 @@
         </div>
         <div class="platform row">
             <div class="col-md-12 col-sm-12 text-center d-flex justify-content-center align-items-center">
-                <div class="desktop shadow-lg">
+                <div class="desktop shadow-lg boton-descarga">
                     <div class="d-flex flex-row justify-content-center">
-                        <i class="fas fa-desktop fa-3x py-2 pr-3"></i>
+                        <i class="fas fa-desktop fa-3x py-2 pr-3 "></i>
                         <div class="text text-center">
                             <h3 class="pt-1 m-0">Desktop</h3>
                             <p class="p-0 m-0">Descargar</p>
@@ -211,14 +232,13 @@
                     <div class="card">
                         <div class="card-body">
                             <img src="./resources/Oliver.jpeg" alt="Josué" class="img-fluid rounded-circle mb-3">
-                            <h3>Josué Alemán</h3>
+                            <h3>Oliver Erazo</h3>
                             <h5>Backend Developer</h5>
-                            <p>Estudiante Olímpico de Informática
-                                Competitiva de El Salvador y entusiasta
-                                de las tecnologías, sobre todo se
-                                concentra en el área de creación de
-                                proyectos utilizando el Stack de MERN o
-                                C#, y en la creación de algoritmos.</p>
+                            <p>Se interesa por aprender cosas nuevas y el
+                                mundo de la programación, una nueva
+                                motivación para seguir aprendiendo más
+                                y mas y sobre todo ser un futuro
+                                programador.</p>
                             <div class="d-flex flex-row justify-content-center">
                                 <div class="p-4">
                                     <a href="#">
@@ -238,14 +258,11 @@
                     <div class="card">
                         <div class="card-body">
                             <img src="./resources/Josue.jpeg" alt="Josué" class="img-fluid rounded-circle mb-3">
-                            <h3>Josué Alemán</h3>
-                            <h5>Backend Developer</h5>
-                            <p>Estudiante Olímpico de Informática
-                                Competitiva de El Salvador y entusiasta
-                                de las tecnologías, sobre todo se
-                                concentra en el área de creación de
-                                proyectos utilizando el Stack de MERN o
-                                C#, y en la creación de algoritmos.</p>
+                            <h3>Oscar Orellana</h3>
+                            <h5>Frontend Developer</h5>
+                            <p>Desde siempre muy enfocado en el diseño y la parte gráfica de las
+                                cosas, en éste caso, en los sitios web y las aplicaciones elaboradas. Ve el desarrollo
+                                de Software como una herramienta complementaria muy importante y útil para su futuro.</p>
                             <div class="d-flex flex-row justify-content-center">
                                 <div class="p-4">
                                     <a href="#">
@@ -264,15 +281,12 @@
                 <div class="col-lg-3 col-md-6 mt-3">
                     <div class="card">
                         <div class="card-body">
-                            <img src="./resources/Josue.jpeg" alt="Josué" class="img-fluid rounded-circle mb-3">
-                            <h3>Josué Alemán</h3>
+                            <img src="./resources/Cesar.jpeg" alt="Josué" class="img-fluid rounded-circle mb-3">
+                            <h3>César Flores</h3>
                             <h5>Backend Developer</h5>
-                            <p>Estudiante Olímpico de Informática
-                                Competitiva de El Salvador y entusiasta
-                                de las tecnologías, sobre todo se
-                                concentra en el área de creación de
-                                proyectos utilizando el Stack de MERN o
-                                C#, y en la creación de algoritmos.</p>
+                            <p>Estudiante Olímpico de informática Competitiva de El Salvador, participante de la IOI
+                                2020, ganador de una medalla de bronce en la CIIC 2019, estudiante del Ricaldone en
+                                desarrollo de software, busca cambiar el mundo con el poder de la programación.</p>
                             <div class="d-flex flex-row justify-content-center">
                                 <div class="p-4">
                                     <a href="#">
@@ -543,7 +557,7 @@
                     </div>
     
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary" id="btnForm">Send</button>
+                        <button type="submit" class="btn btn-primary" id="btnForm">Enviar</button>
                     </div>
     
                 </form>

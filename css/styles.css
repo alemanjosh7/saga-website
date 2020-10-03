@@ -4,12 +4,48 @@ html{
     scroll-behavior: smooth;
 }
 
+/*Animaciones navbar*/
+.botonesnav:hover{
+    padding: 10px;
+    text-decoration: none;
+    color: white;
+    background: #0062CC;
+    border-radius: 25px;
+    animation: botonNav 0.5s 1 linear 0.01s;
+    background-position: 0;
+}
+@keyframes botonNav{
+    0%{-webkit-transform: rotate(0deg) ;}
+    40%{-webkit-transform: rotate(5deg);}
+    80%{-webkit-transform: rotate(-5deg);}
+    100%{-webkit-transform: rotate(0deg);}
+}
+.titulo:hover{
+    color: transparent;
+    text-transform: uppercase;
+    background-image: linear-gradient(to right, #6BCCCE, #6B9BCE, #6D6BCE,#9E6BCE, #CE6BCC, #CE6B9B);
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    background-clip: text;
+    animation: tituloNav 7s linear infinite 1s;
+    background-size: 1000%;
+}
+
+@keyframes tituloNav{
+    0%{ background-position: 0% 100%;}
+    40%{ background-position: 100% 0%;}
+    80%{background-position: 0% 100%;}
+    100%{background-position: 100% 0%;}
+}
+/*Fin animaciones navbar*/
 /*inico del nabvar*/
-.titulo {
+.titulo{
     margin-left: 15px;
     margin-top: 15px;
     color: black;
     font-family: 'Nunito', sans-serif;
+    font-size: 35pt;
+
 }
 
 .logo {
@@ -79,19 +115,28 @@ h1 {
 }
 
 .botonesnav {
-    margin-right: 15px;
-    margin-left: 15px;
+    text-align: center;
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 25px;
+    margin-right: 10px;
+    margin-left: 10px;
     font-size: 11pt;
     color: black;
-    background: transparent;
     border: none;
     font-family: 'Nunito', sans-serif;
-    text-decoration: none;
+    background-image: -webkit-linear-gradient(45deg, #0042AC 50%, transparent 50%);
+    background-image: linear-gradient(45deg, #20629C 50%, transparent 50%);
+    background-position: 200%;
+    background-size: 500%;
+    -webkit-transition: background 1000ms ease-in-out;
+    transition: background 500ms ease-in-out;
 }
 
-.botonesnav:hover {
-    text-decoration: none;
-    color: #3431C1;
+.fondo{
+    width: auto;
+    height: 500px;
+    background:#0062CC ;
 }
 
 .desplegable {
@@ -106,52 +151,43 @@ h1 {
     justify-content: flex-end;
     width: 100%;
 }
-
-
-@media (max-width: 999px) {
+@media (max-width: 990px) {
     .contendor-menu {
         display: flex;
         flex-direction: row;
         justify-content: flex-start;
         width: 100%;
     }
+    .botonesnav{
+        margin: 3px;
+        width: 100%;
+        text-align: center;
+    }
+    .Contendor-navbar{
+        width: 100%;
+    }
 }
+@media (max-width: 1090px) {
+    .botonesnav{
+        padding: 5px 3px;
+        margin-right: 7px;
+        margin-left: 7px;
 
-@media (min-width: 1000px) {
+    }
+}
+@media (min-width: 1200px) {
     .contendor-menu {
         display: flex;
         flex-direction: row;
         justify-content: flex-end;
         width: 100%;
     }
+    .Contendor-navbar{
+        width: auto;
+    }
 }
 
-.bg-menu {
-    background-color: white;
-}
-
-a.bg-menu:hover,
-a.bg-light:focus,
-button.bg-light:hover,
-button.bg-light:focus {
-    background-color: #dae0e5;
-}
-
-.navbar-menu .navbar-brand {
-    color: #000000;
-}
-
-
-.navbar-menu .navbar-nav .nav-link {
-    color: #FFFFFF;
-}
-
-.navbar-menu .navbar-nav .nav-link:hover,
-.navbar-menu .navbar-nav .nav-link:focus {
-    color: #DADAFF;
-}
-
-.navbar-menu .navbar-toggler {
+  .navbar-menu .navbar-toggler {
     color: #24A7F5;
     border-color: #000000;
 }
@@ -172,15 +208,179 @@ button.bg-light:focus {
 /*Fin titulo documentación*/
 /*Documentacion botones*/
 
+.contenedor-boton{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+/*.boton-informacion{
+	position: relative;
+	padding: 25px 50px;
+	border-radius: 30px;
+	text-align: center;
+	max-width: 320px;
+	height: auto;
+	margin-bottom: 60px;
+    overflow: hidden;
+	color: black;
+    cursor: pointer;
+	letter-spacing: 2px;
+	box-shadow:inset 0 0 0 1px rgba(0,0,0,0.1);
+	text-decoration: none;
+	transition: all ease 0.5s;
+	background:white;
+}
 
-.btn-documentacion:hover {
-    color: #fff;
-    background-color: #0069d9;
-    border-color: #0062cc;
+.boton-informacion:after,
+.boton-informacion:before{
+    
+	width: 80px;
+	height: 200px;
+	content: '';
+	background: rgba(255,255,255,0.5);
+	transform: rotate(45deg);
+	top: -60px;
+	position: absolute;
+	transition: none;
+	right:-80%;
+	cursor: pointer;
+}
+
+.boton-informacion:before{
+	left: -80%;
+}
+
+.boton-informacion:hover{
+    color: white;
+	text-shadow: 0 1px 1px rgba(0,0,0,0.5);
+	background:#005BFF
+}
+
+.boton-informacion:hover:after,
+.boton-informacion:hover:before{
+	transform: rotate(45deg), scaleX(130%);
+	background: rgba(255,255,255,0.1);
+	transition: all ease 0.5s;
+}
+
+.boton-informacion:hover:after{
+	right: 150%;
+}
+
+.boton-informacion:hover:before{
+	left: 150%;
+}
+*/
+.boton-animado{
+    text-align: center;
+    position: relative;
+    display: inline-block;
+    padding: 10px 30px;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: rgba(255, 255, 255, 1);
+    background: #007BFF;
+    transition: 0.5s;
+}
+.boton-animado:hover{
+    text-decoration: none;  
+    color:  rgba(255, 255, 255, 0.8);
+}
+
+.boton-animado span{
+    display: block;
+    position: absolute;
+    background: #00C7FF;
+}
+
+.boton-animado span:nth-child(1){
+    left: 0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+
+.boton-animado:hover span:nth-child(1){
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transform: transform 0.5s;
+    transition-delay: 0.3s;
+}
+.boton-animado span:nth-child(2){
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+.boton-animado:hover span:nth-child(2){
+    transform: scaleX(1);
+    transform-origin: left;
+    transform: transform 0.5s;
+    transition-delay: 0.3s;
+}
+.boton-animado span:nth-child(3){
+    right:  0;
+    bottom: 0;
+    width: 2px;
+    height: 100%;
+    transform: scaleY(0);
+    transform-origin: top;
+    transition: transform 0.5s;
+}
+
+.boton-animado:hover span:nth-child(3){
+    transform: scaleY(1);
+    transform-origin: bottom;
+    transform: transform 0.5s;
+    transition-delay: 0.3s;
+}
+.boton-animado span:nth-child(4){
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 2px;
+    transform: scaleX(0);
+    transform-origin: right;
+    transition: transform 0.5s;
+}
+
+.boton-animado:hover span:nth-child(4){
+    transform: scaleX(1);
+    transform-origin: left;
+    transform: transform 0.5s;
+    transition-delay: 0.3s;
+}
+@keyframes boton{
+    0%{-webkit-transform: scale(0.98)}
+    0%{box-shadow: 0px 0px 5px 5px #3B5FA9};
 }
 
 .documentacion {
     border: 1px solid black;
+}
+
+.boton-spy {
+    color: #FFF;
+    background: #007BFF;
+    display: block;
+    text-align: center;
+    cursor: pointer;
+    box-shadow: inset 0 0 0 0 #0062CC;
+    -webkit-transition: all ease 0.8s;
+    -moz-transition: all ease 0.8s;
+    transition: all ease 0.5s;
+}
+.boton-spy:hover {
+    color: white;
+    box-shadow: inset 0 70px 0 0 #0062CC;
 }
 
 @media (max-width: 1099px) {
@@ -207,6 +407,20 @@ button.bg-light:focus {
     }
 
 }
+.boton-descarga{
+    transition: box-shadow 0.2s ease-in-out;
+}
+.boton-descarga:hover{
+    animation: pulsar 5s linear infinite 0s;
+    box-shadow:0px 0px 15px 15px transparent;
+
+
+}
+@keyframes pulsar{
+    0%{-webkit-transform: scale(0.98)}
+    0%{box-shadow: 0px 0px 5px 5px #3B5FA9};
+}
+
 
 @media (min-width: 1100px) {
     .documentacion {
@@ -238,7 +452,7 @@ button.bg-light:focus {
 }
 
 .parallax{
-    background: url("../resources/bg-down.jpg"), linear-gradient(230deg,#000000, #0f0fa1a9) no-repeat center;
+    background: url("../resources/bg-down.jpeg"), linear-gradient(230deg,#000000, #0f0fa1a9) no-repeat center;
     background-blend-mode: luminosity;
     background-size: cover;
     background-attachment: fixed;
@@ -247,7 +461,28 @@ button.bg-light:focus {
     transform-style: inherit;
     overflow: hidden;
 }
-
+.inicio{
+    background: url("../resources/Bodega-fondo.jpg"), linear-gradient(230deg,#000000, #0f0fa1a9) no-repeat center;
+    background-blend-mode: luminosity;
+    background-size: cover;
+    background-attachment: fixed;
+    object-fit: cover;
+    box-sizing: border-box;
+    transform-style: inherit;
+    overflow: hidden;
+}
+.jumbotron .text-light>h1 {
+    font-weight: bold;
+    padding: 2em 0 0.5em 0;
+    color: whitesmoke;
+    font-size: 6vmin;
+}
+.jumbotron .text-light>p {
+    font-weight: bold;
+    padding: 2px;
+    color: whitesmoke;
+    font-size: 3vmin;
+}
 .section-3 .col-md-12>h1 {
     padding: 2em 0 0.5em 0;
     color: whitesmoke;
@@ -312,7 +547,8 @@ button.bg-light:focus {
 }
 
 .contenedor img {
-    height: 90vh;
+    
+    height: 100vh;
 }
 
 /*  Nuestro equipo */
@@ -505,7 +741,7 @@ blockquote {
 }
 
 .btn-footer:hover{
-    background-color: #152B37;
+    background-color: #00254D;
 
     transition-property: all;
     transition-duration: 0.3s;
@@ -513,12 +749,17 @@ blockquote {
 }
 
 .col-redes .fab:hover{
-    color: #054B6F;
+    color: #00254D;
 }
-
 
 .formulario{
     padding: 40px;
+}
+
+
+#btnForm {
+    background-color: #00254D;
+    border-color: #00254D;
 }
 
 @media screen and (max-width: 576){
@@ -642,7 +883,7 @@ blockquote {
 }
 
 .waveAnimation .waveTop {
-    animation: move-wave 3s;
+    animation: move_wave 3s linear infinite;
 
 }
 
