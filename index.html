@@ -15,7 +15,6 @@
 </head>
 
 <body>
-
     <div class="carousel-aux">
         <nav class="navbar navbar-expand-lg navbar-menu bg-menu absolute">
             <div style="height: 75px;">
@@ -30,19 +29,23 @@
                 <div class="d-flex contendor-menu">
                     <ul class="navbar-nav mt-2 mt-lg">
                         <li class="nav-item">
-                            <a type="button" class="botonesnav" href="#Inicio">INICIO</a>
+                            <a data-scroll id="inicio" type="button" class="botonesnav" href="#Inicio">INICIO</a>
                         </li>
                         <li class="nav-item">
-                            <a type="button" class=" botonesnav" href="#Sobre_Nosotros">SOBRE NOSOTROS</a>
+                            <a data-scroll id="sobreNosotros" type="button" class=" botonesnav"
+                                href="#Sobre_Nosotros">SOBRE NOSOTROS</a>
                         </li>
                         <li class="nav-item">
-                            <a type="button" class=" botonesnav" href="#documentacion">DOCUMENTACIÓN</a>
+                            <a data-scroll id="documentacion" type="button" class=" botonesnav"
+                                href="#Documentacion">DOCUMENTACIÓN</a>
                         </li>
                         <li class="nav-item">
-                            <a type="button" class=" botonesnav" href="#Preguntas">PREGUNTAS FRECUENTES</a>
+                            <a data-scroll id="preguntas" type="button" class=" botonesnav" href="#Preguntas">PREGUNTAS
+                                FRECUENTES</a>
                         </li>
                         <li class="nav-item">
-                            <a type="button" class="botonesnav" href="#Contactanos">CONTÁCTANOS</a>
+                            <a data-scroll id="contactanos" type="button" class="botonesnav"
+                                href="#Contactanos">CONTÁCTANOS</a>
                         </li>
                     </ul>
                 </div>
@@ -102,46 +105,114 @@
         </div>
 
     </div>
-    <div class="container-fluid">
+    <div class="container-fluid" id="Documentacion">
         <div class="row">
             <div class="col-12 d-flex justify-content-center">
                 <h3 class="titulo-documentacion">Documentación</h3>
             </div>
         </div>
-        <div class="row documentacion">
-            <div class="col-3 d-flex flex-column align-items-center justify-content-center">
-                <div id="list-example" class="list-group">
-                    <a class="list-group-item list-group-item-action mt-3" href="#list-item-1">Item 1</a>
-                    <a class="list-group-item list-group-item-action mt-3" href="#list-item-2">Item2</a>
-                    <a class="list-group-item list-group-item-action mt-3" href="#list-item-3">Item 3</a>
-                    <a class="list-group-item list-group-item-action mt-3" href="#list-item-4">Item 4</a>
-                </div>
+        <div class="row d-flex flex-row documentacion mt-5">
+            <div id="list-example" class="list-group col-3 mx-auto">
+                <a data-scroll id="item1" class="list-group-item list-group-item-action active" href="#list-item-1">Item
+                    1</a>
+                <a id="item2" class="list-group-item list-group-item-action" href="#list-item-2">Item2</a>
+                <a id="item3" class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+                <a id="item4" class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
             </div>
-            <div class="col">
-                <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
-                    <h4 id="list-item-1">Item 1</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam id commodi eaque saepe
-                        exercitationem sed veniam impedit. Fugiat repellat atque aut natus quod, error consequuntur illo
-                        ut tempore minima in.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nam odio molestiae, minus odit
-                        corrupti deserunt ab deleniti exercitationem tempora omnis laborum consectetur quam laboriosam?
-                        Quam temporibus consequuntur nesciunt voluptatem.
-                        lorem*20
-                    </p>
-                    <h4 id="list-item-2">Item 2</h4>
-                    <p>...</p>
-                    <h4 id="list-item-3">Item 3</h4>
-                    <p>...</p>
-                    <h4 id="list-item-4">Item 4</h4>
-                    <p>...</p>
-                </div>
+            <div data-spy="scroll" data-target="#list-example" data-offset="10"
+                class="scrollspy-example col-8 mx-auto scroll p-3 rounded">
+                <h4 id="list-item-1">Item 1</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit delectus fugit sed quam perferendis
+                    maiores cumque totam vel quasi quae eos ea dicta at, aliquam quas quo? Unde, omnis quo.
+                    Necessitatibus enim commodi ut dolores dolor fugiat, eligendi accusantium optio est odit, aliquid a!
+                    Nemo, dicta praesentium tenetur in nesciunt dolores, quisquam, omnis rem deleniti possimus nihil
+                    deserunt eaque non.
+                    Autem dicta consequatur eligendi! Asperiores ipsam dolores, numquam harum praesentium unde labore
+                    suscipit soluta ipsa sed, sapiente voluptatem molestias quo deleniti quidem molestiae adipisci
+                    necessitatibus voluptatibus vitae rerum. Alias, enim.
+                    Veritatis, ipsa provident? Quisquam, explicabo delectus error mollitia, recusandae incidunt at
+                    nesciunt magni a omnis laborum assumenda repellat aliquam, distinctio aspernatur in animi vitae
+                    autem accusantium ipsa rerum odit architecto.
+                    Labore est error, iste autem recusandae esse reiciendis necessitatibus sint aut dolor provident, in
+                    doloremque. Magnam voluptatem aperiam cupiditate, eligendi harum quaerat animi earum temporibus
+                    ipsa, dolores exercitationem asperiores natus?
+                    Nihil quis ullam aliquam sit! Magnam earum, ducimus placeat excepturi delectus necessitatibus iste
+                    laudantium rerum fugit inventore voluptates totam magni expedita pariatur. Animi obcaecati
+                    repudiandae reiciendis adipisci nulla, alias labore.
+                    Minima cumque maxime, obcaecati autem possimus tenetur, a odio minus commodi quas, beatae neque
+                    voluptatem sequi officia harum omnis. Commodi vero sed labore. In dicta nobis fuga. Quod, libero
+                    nobis.</p>
+                <h4 id="list-item-2">Item 2</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit delectus fugit sed quam perferendis
+                    maiores cumque totam vel quasi quae eos ea dicta at, aliquam quas quo? Unde, omnis quo.
+                    Necessitatibus enim commodi ut dolores dolor fugiat, eligendi accusantium optio est odit, aliquid a!
+                    Nemo, dicta praesentium tenetur in nesciunt dolores, quisquam, omnis rem deleniti possimus nihil
+                    deserunt eaque non.
+                    Autem dicta consequatur eligendi! Asperiores ipsam dolores, numquam harum praesentium unde labore
+                    suscipit soluta ipsa sed, sapiente voluptatem molestias quo deleniti quidem molestiae adipisci
+                    necessitatibus voluptatibus vitae rerum. Alias, enim.
+                    Veritatis, ipsa provident? Quisquam, explicabo delectus error mollitia, recusandae incidunt at
+                    nesciunt magni a omnis laborum assumenda repellat aliquam, distinctio aspernatur in animi vitae
+                    autem accusantium ipsa rerum odit architecto.
+                    Labore est error, iste autem recusandae esse reiciendis necessitatibus sint aut dolor provident, in
+                    doloremque. Magnam voluptatem aperiam cupiditate, eligendi harum quaerat animi earum temporibus
+                    ipsa, dolores exercitationem asperiores natus?
+                    Nihil quis ullam aliquam sit! Magnam earum, ducimus placeat excepturi delectus necessitatibus iste
+                    laudantium rerum fugit inventore voluptates totam magni expedita pariatur. Animi obcaecati
+                    repudiandae reiciendis adipisci nulla, alias labore.
+                    Minima cumque maxime, obcaecati autem possimus tenetur, a odio minus commodi quas, beatae neque
+                    voluptatem sequi officia harum omnis. Commodi vero sed labore. In dicta nobis fuga. Quod, libero
+                    nobis.</p>
+                <h4 id="list-item-3">Item 3</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit delectus fugit sed quam perferendis
+                    maiores cumque totam vel quasi quae eos ea dicta at, aliquam quas quo? Unde, omnis quo.
+                    Necessitatibus enim commodi ut dolores dolor fugiat, eligendi accusantium optio est odit, aliquid a!
+                    Nemo, dicta praesentium tenetur in nesciunt dolores, quisquam, omnis rem deleniti possimus nihil
+                    deserunt eaque non.
+                    Autem dicta consequatur eligendi! Asperiores ipsam dolores, numquam harum praesentium unde labore
+                    suscipit soluta ipsa sed, sapiente voluptatem molestias quo deleniti quidem molestiae adipisci
+                    necessitatibus voluptatibus vitae rerum. Alias, enim.
+                    Veritatis, ipsa provident? Quisquam, explicabo delectus error mollitia, recusandae incidunt at
+                    nesciunt magni a omnis laborum assumenda repellat aliquam, distinctio aspernatur in animi vitae
+                    autem accusantium ipsa rerum odit architecto.
+                    Labore est error, iste autem recusandae esse reiciendis necessitatibus sint aut dolor provident, in
+                    doloremque. Magnam voluptatem aperiam cupiditate, eligendi harum quaerat animi earum temporibus
+                    ipsa, dolores exercitationem asperiores natus?
+                    Nihil quis ullam aliquam sit! Magnam earum, ducimus placeat excepturi delectus necessitatibus iste
+                    laudantium rerum fugit inventore voluptates totam magni expedita pariatur. Animi obcaecati
+                    repudiandae reiciendis adipisci nulla, alias labore.
+                    Minima cumque maxime, obcaecati autem possimus tenetur, a odio minus commodi quas, beatae neque
+                    voluptatem sequi officia harum omnis. Commodi vero sed labore. In dicta nobis fuga. Quod, libero
+                    nobis.</p>
+                <h4 id="list-item-4">Item 4</h4>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit delectus fugit sed quam perferendis
+                    maiores cumque totam vel quasi quae eos ea dicta at, aliquam quas quo? Unde, omnis quo.
+                    Necessitatibus enim commodi ut dolores dolor fugiat, eligendi accusantium optio est odit, aliquid a!
+                    Nemo, dicta praesentium tenetur in nesciunt dolores, quisquam, omnis rem deleniti possimus nihil
+                    deserunt eaque non.
+                    Autem dicta consequatur eligendi! Asperiores ipsam dolores, numquam harum praesentium unde labore
+                    suscipit soluta ipsa sed, sapiente voluptatem molestias quo deleniti quidem molestiae adipisci
+                    necessitatibus voluptatibus vitae rerum. Alias, enim.
+                    Veritatis, ipsa provident? Quisquam, explicabo delectus error mollitia, recusandae incidunt at
+                    nesciunt magni a omnis laborum assumenda repellat aliquam, distinctio aspernatur in animi vitae
+                    autem accusantium ipsa rerum odit architecto.
+                    Labore est error, iste autem recusandae esse reiciendis necessitatibus sint aut dolor provident, in
+                    doloremque. Magnam voluptatem aperiam cupiditate, eligendi harum quaerat animi earum temporibus
+                    ipsa, dolores exercitationem asperiores natus?
+                    Nihil quis ullam aliquam sit! Magnam earum, ducimus placeat excepturi delectus necessitatibus iste
+                    laudantium rerum fugit inventore voluptates totam magni expedita pariatur. Animi obcaecati
+                    repudiandae reiciendis adipisci nulla, alias labore.
+                    Minima cumque maxime, obcaecati autem possimus tenetur, a odio minus commodi quas, beatae neque
+                    voluptatem sequi officia harum omnis. Commodi vero sed labore. In dicta nobis fuga. Quod, libero
+                    nobis.</p>
             </div>
         </div>
     </div>
 
-    <section class="section-3 container-fluid p-0 text-center parallax">
+    <section
+        class="section-3 container-fluid p-0 text-center parallax d-flex justify-content-center align-items-center flex-column">
         <div class="row">
-            <div class="col-md-12 col-sm-12 mt-5">
+            <div class="col-md-12 col-sm-12">
                 <h1>Lleva tu empresa de almacenamiento al siguiente nivel </h1>
                 <p>
                     Con SAGA puedes facilmente organizar todo acerca de espacios, contratos,
@@ -154,7 +225,7 @@
                 <div class="desktop shadow-lg">
                     <div class="d-flex flex-row justify-content-center">
                         <i class="fas fa-desktop fa-3x py-2 pr-3"></i>
-                        <div class="text text-center">
+                        <div class="text text-center d-flex justify-content-center align-items-center flex-column">
                             <h3 class="pt-1 m-0">Desktop</h3>
                             <p class="p-0 m-0">Descargar</p>
                         </div>
@@ -169,7 +240,7 @@
 
     <!--Nuestro Equipo-->
 
-    <section class="team">
+    <section class="team" id="Sobre_Nosotros">
         <div class="container-fluid my-3 py-5 text-center">
             <div class="row mb-5">
                 <div class="col">
@@ -237,8 +308,8 @@
                 <div class="col-lg-3 col-md-6 mt-3">
                     <div class="card">
                         <div class="card-body">
-                            <img src="./resources/Josue.jpeg" alt="Josué" class="img-fluid rounded-circle mb-3">
-                            <h3>Josué Alemán</h3>
+                            <img src="./resources/Cesar.jpeg" alt="Cesar" class="img-fluid rounded-circle mb-3">
+                            <h3>César Flores</h3>
                             <h5>Backend Developer</h5>
                             <p>Estudiante Olímpico de Informática
                                 Competitiva de El Salvador y entusiasta
@@ -571,6 +642,8 @@
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
         integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
         crossorigin="anonymous"></script>
+
+    <script src="https://cdn.jsdelivr.net/gh/cferdinandi/smooth-scroll/dist/smooth-scroll.polyfills.min.js"></script>
     <script src="js/app.js"></script>
 </body>
 

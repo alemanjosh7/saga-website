@@ -1,33 +1,5 @@
-(function($) {
-  $(document).ready(function() {
-    // Pause hero carousel
-    $(".hero-carousel").carousel("pause");
-  });
-})(jQuery);
-
-$(document).ready(function() {
-  var $navbar = $("#mNavbar");
-
-  AdjustHeader(); // Incase the user loads the page from halfway down (or something);
-  $(window).scroll(function() {
-    AdjustHeader();
-  });
-
-  function AdjustHeader() {
-    if ($(window).scrollTop() > 60) {
-      if (!$navbar.hasClass("navbar-fixed-top")) {
-        $navbar.addClass("navbar-fixed-top");
-      }
-    } else {
-      $navbar.removeClass("navbar-fixed-top");
-    }
-  }
-});
-
-
-var skewed = document.querySelector(".skewed");
-
-window.addEventListener('scroll', function(){
-  var value = window.scrollY;
-  skewed.style.transform = "skewY("+ value+"deg)";
-})
+var contactanos = new SmoothScroll('a[href*="#Contactanos"]');
+var documentacion = new SmoothScroll('a[href*="#Documentacion"]');
+var preguntas = new SmoothScroll('a[href*="#Preguntas"]');
+var sobreNosotros = new SmoothScroll('a[href*="#Sobre_Nosotros"]');
+var sobreNosotros = new SmoothScroll('a[href*="#Inicio"]');

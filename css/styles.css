@@ -1,5 +1,9 @@
 @import url('https://fonts.googleapis.com/css2?family=Nunito:wght@800&display=swap');
 
+body {
+    position: relative;
+}
+
 /*inico del nabvar*/
 .titulo {
     margin-left: 15px;
@@ -176,11 +180,18 @@ button.bg-light:focus {
 }
 
 .documentacion {
-    border: 1px solid black;
+    position: relative;
+    height: 50vh;
 }
 
-@media (max-width: 1099px) {
-    .documentacion {
+.scroll {
+    height: 300px;
+    overflow-y: scroll;
+}
+
+@media (min-width: 640px) {
+
+    /* .documentacion {
         margin-top: 20px;
         margin-left: 10px;
         display: flex;
@@ -188,6 +199,9 @@ button.bg-light:focus {
         justify-content: space-between;
         align-items: center;
         width: 100%;
+    } */
+    h1 {
+        font-size: 1pt;
     }
 
     .btn-documentacion {
@@ -204,13 +218,38 @@ button.bg-light:focus {
 
 }
 
+@media (max-width: 1099px) {
+    /* .documentacion {
+        margin-top: 20px;
+        margin-left: 10px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    } */
+
+    .btn-documentacion {
+        margin-bottom: 5px;
+        width: 100%;
+        color: #0062cc;
+        background-color: #ffffff;
+        border-color: #0062cc;
+    }
+
+    .li-boton {
+        width: 100%;
+    }
+
+}
+
 @media (min-width: 1100px) {
-    .documentacion {
+    /* .documentacion {
         margin-top: 20px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
-    }
+    } */
 
     .btn-documentacion {
         width: 150px;
@@ -230,11 +269,11 @@ button.bg-light:focus {
     height: 80vh;
     width: 100%;
     margin-top: 15vmin;
-    
+
 }
 
-.parallax{
-    background: url("../resources/bg-down.jpg"), linear-gradient(230deg,#000000, #0f0fa1a9) no-repeat center;
+.parallax {
+    background: url("../resources/bg-down.jpg"), linear-gradient(230deg, #000000, #0f0fa14f) no-repeat center;
     background-blend-mode: luminosity;
     background-size: cover;
     background-attachment: fixed;
@@ -254,6 +293,7 @@ button.bg-light:focus {
     padding: 0 4em;
     padding-bottom: 2em;
     color: #fff;
+
     font-size: 3vmin;
 }
 
@@ -639,6 +679,8 @@ blockquote {
 
 .team p {
     font-weight: 500;
+    text-align: justify;
+    text-align-last: center;
 }
 
 .team .card {
