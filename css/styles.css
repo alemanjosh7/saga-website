@@ -518,12 +518,19 @@ h1 {
 
 
 @media (min-width: 1100px) {
+
     /* .documentacion {
         margin-top: 20px;
         display: flex;
         flex-direction: row;
         justify-content: space-between;
     } */
+    .team-iconos {
+        padding-top: 80px;
+    }
+    .card-body{
+        
+    }
 
     .btn-documentacion {
         width: 150px;
@@ -618,16 +625,21 @@ h1 {
     height: auto;
 }
 
-.card-body img{
+
+.card-subtitle {
+    margin: 5px;
+}
+
+.card-body img {
     width: 40%;
     height: 40%;
 }
 
 /* .card-body { */
-    /* padding-bottom: 40px; */
+/* padding-bottom: 40px; */
 /* } */
 
-.card-body p{
+.card-body p {
     height: 160px;
 }
 
@@ -642,6 +654,16 @@ h1 {
 .imagen-100 {
     width: 150px;
     height: 150px;
+}
+
+.requerimientos {
+    border: 1px solid black;
+}
+
+.tabla-text {
+    border: 1px solid black;
+    size: 14pt;
+    text-align: center;
 }
 
 .Person-title {
@@ -872,30 +894,6 @@ blockquote {
     border-color: #00254D;
 }
 
-@media screen and (max-width: 576px) {
-
-    .col-redes .fab {
-        margin-left: -100px;
-    }
-    
-}
-
-@media screen and (max-width: 992px) {
-
-    .row-redes {
-        margin: auto;
-    }
-
-    .col-btn {
-        margin-top: 30px;
-    }
-
-    .btn-footer {
-        text-align: center;
-    }
-    
-}
-
 .col-btn {
     display: flex;
     justify-content: center;
@@ -908,10 +906,6 @@ blockquote {
 
 .col-redes {
     margin-top: 30px;
-}
-
-.col-redes .fab {
-    margin-right: 40px;
 }
 
 
@@ -1070,4 +1064,116 @@ blockquote {
 .team .card:hover h3,
 .team .card:hover i {
     color: #fff;
+}
+
+/*Preguntas Frecuentes */
+
+.up {
+    animation: rotu 0.3s linear;
+    animation-fill-mode: both;
+}
+
+.down {
+    animation: rotd 0.3s linear;
+    animation-fill-mode: both;
+}
+
+@keyframes rotu {
+    0% {
+        transform: none;
+    }
+
+    100% {
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes rotd {
+    0% {
+        transform: rotate(-180deg);
+    }
+
+    100% {
+        transform: none;
+    }
+}
+
+.row {
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.container-fluid {
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#requerimientos {
+    width: 60%;
+}
+
+.tamt {
+    width: 80%;
+}
+
+.margen {
+    padding: 10px;
+}
+
+.tamt3 {
+    display: flex;
+    justify-content: end;
+    width: 20%;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+
+.tamt2 {
+    width: 80%;
+}
+
+.team-iconos {
+    padding-top: 30px;
+}
+
+@media screen and (max-width: 992px) {
+
+    .row-redes {
+        margin: auto;
+    }
+
+    .col-btn {
+        margin-top: 30px;
+    }
+
+    .btn-footer {
+        text-align: center;
+    }
+
+    #requerimientos {
+        width: 100%;
+    }
+
+    .tamt {
+        width: 100%;
+    }
+
+    .tamt2 {
+        width: 90%;
+    }
+
+    .tamt3 {
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 576px) {
+
+    #requerimientos {
+        width: 100%;
+    }
 }
