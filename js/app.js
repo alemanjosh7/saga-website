@@ -24,10 +24,47 @@ $(document).ready(function() {
   }
 });
 
+/* detectar zona horaria*/1
+window.onload = function() {
 
-var skewed = document.querySelector(".skewed");
+}
+/* fin - detectar zona horaria*/
 
-window.addEventListener('scroll', function(){
-  var value = window.scrollY;
-  skewed.style.transform = "skewY("+ value+"deg)";
+$('#collapse1').on('show.bs.collapse', function () {
+  var element = document.getElementById("arrow1");
+  element.classList.add("up");
+  element.classList.remove("down");
+})
+
+$('#collapse1').on('hide.bs.collapse', function () {
+  var element = document.getElementById("arrow1");
+  element.classList.add("down");
+  element.classList.remove("up");
+  
+})
+
+$('#collapse2').on('show.bs.collapse', function () {
+  var element = document.getElementById("arrow2");
+  element.classList.add("up");
+  element.classList.remove("down");
+})
+
+$('#collapse2').on('hide.bs.collapse', function () {
+  var element = document.getElementById("arrow2");
+  element.classList.add("down");
+  element.classList.remove("up");
+  
+})
+
+$('#collapse3').on('show.bs.collapse', function () {
+  var element = document.getElementById("arrow3");
+  element.classList.add("up");
+  element.classList.remove("down");
+})
+
+$('#collapse3').on('hide.bs.collapse', function () {
+  var element = document.getElementById("arrow3");
+  element.classList.add("down");
+  element.classList.remove("up");
+  
 })

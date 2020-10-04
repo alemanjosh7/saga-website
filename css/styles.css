@@ -515,6 +515,15 @@ h1 {
 
 /*Fin section*/
 
+.card {
+    border: none;
+    display: flex;
+    align-items: center;
+}
+
+.card-subtitle {
+    margin: 5px;
+}
 
 .card-body img {
     width: 40%;
@@ -762,28 +771,6 @@ blockquote {
     border-color: #00254D;
 }
 
-@media screen and (max-width: 576){
-    
-    .col-redes .fab{
-        margin-left: -100px;
-    }
-}
-
-@media screen and (max-width: 992px){
-
-    .row-redes{
-        margin: auto;
-    }
-
-    .col-btn{
-        margin-top: 30px;
-    }
-
-    .btn-footer{
-        text-align: center;
-    }
-}
-
 .col-btn{
     display: flex;
     justify-content: center;
@@ -796,10 +783,6 @@ blockquote {
 
 .col-redes {
     margin-top: 30px;
-}
-
-.col-redes .fab {
-    margin-right: 40px;
 }
 
 
@@ -957,3 +940,109 @@ blockquote {
 .team .card:hover i {
     color: #fff;
 }
+
+/*Preguntas Frecuentes */
+
+.up {
+    animation: rotu 0.3s linear;
+    animation-fill-mode: both;
+}
+
+.down{
+    animation: rotd 0.3s linear;
+    animation-fill-mode: both;
+}
+
+@keyframes rotu {
+    0% {
+        transform: none;
+    }
+    100%{
+        transform: rotate(180deg);
+    }
+}
+
+@keyframes rotd {
+    0% {
+        transform: rotate(-180deg);
+    }
+    100%{
+        transform: none;
+    }
+}
+
+.row{
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+.container-fluid{
+    padding-left: 0px;
+    padding-right: 0px;
+}
+
+#requerimientos{
+    width: 60%;
+}
+
+.tamt{
+    width: 80%;
+}
+
+.margen{
+    padding: 10px;
+}
+
+.tamt3{
+    display: flex;
+    justify-content: end;
+    width: 20%;
+    padding: 10px;
+    padding-top: 0px;
+}
+
+
+.tamt2{
+    width: 80%;
+}
+
+@media screen and (max-width: 992px){
+
+    .row-redes{
+        margin: auto;
+    }
+
+    .col-btn{
+        margin-top: 30px;
+    }
+
+    .btn-footer{
+        text-align: center;
+    }
+
+    #requerimientos{
+        width: 100%;
+    }
+
+    .tamt{
+        width: 100%;
+    }
+    
+    .tamt2{
+        width: 90%;
+    }
+
+    .tamt3{
+        width: 100%;
+        text-align: center;
+        justify-content: center;
+    }
+}
+
+@media screen and (max-width: 576px){
+
+    #requerimientos{
+        width: 100%;
+    }
+}
+
