@@ -51,23 +51,21 @@
                 </div>
             </div>
         </nav>
-
         <div class="contenedor tope mb-5">
             <div id="carouselControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="resources/img1.jpg" alt="Transporte">
+                        <img class="d-block w-100" src="resources/bodegas.jpg" alt="Transporte">
                     </div>
                     <div class="carousel-item active">
-                        <img class="d-block w-100" src="resources/img2.jpg" alt="Seguridad">
+                        <img class="d-block w-100" src="resources/almacen.jpg" alt="Seguridad">
                     </div>
                     <div class="carousel-item">
-                        <img class="d-block w-100" src="resources/img3.jpg" alt="Trabajadores">
+                        <img class="d-block w-100" src="resources/cajas.jpg" alt="Trabajadores">
                     </div>
                 </div>
-
                 <div class="waveWrapper waveAnimation">
-                    <div class=" bgTop">
+                    <div class="bgTop">
                         <div class="wave waveTop" style="background-image: url(resources/wave.png)"></div>
                     </div>
                     <div class="bgMiddle">
@@ -77,7 +75,6 @@
                         <div class="wave waveBottom" style="background-image: url(resources/wave.png)"></div>
                     </div>
                 </div>
-
                 <a class="carousel-control-prev" href="#carouselControls" role="button" data-slide="prev">
                     <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span class="sr-only">Previous</span>
@@ -89,7 +86,8 @@
             </div>
         </div>
 
-        <div id="Inicio" class="jumbotron h-100 text-center mb-5 mt-5 pt-5 pb-5" style="background-color: #243DAAD0;">
+
+        <div id="Inicio" class="jumbotron h-100 text-center mb-5 mt-5 pt-5 pb-5 inicio">
             <div class="text-light">
                 <h1 class="display-4 mt-3">Lleva tu empresa de almacenamiento al siguiente nivel</h1>
                 <p class="lead mt-4">Con SAGA puedes facilmente organizar todo acerca de espacios, contratos,
@@ -97,8 +95,15 @@
                 <hr class="my-4 mt-2">
                 <p>Para más información click aquí
                 </p>
-                <p class="lead">
-                    <a class="btn btn-primary btn-lg mt-4" href="#documentacion" role="button">Documentación</a>
+                <p class="lead contenedor-boton">
+                    <a class="boton-animado" href="#Documentacion" role="button">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <i class="fas fa-file-alt fa-2x py-2 pr-2"></i>
+                        Documentación
+                    </a>
                 </p>
             </div>
 
@@ -113,13 +118,13 @@
         </div>
         <div class="row d-flex flex-row documentacion mt-5">
             <div id="list-example" class="list-group col-3 mx-auto">
-                <a data-scroll id="item1" class="list-group-item list-group-item-action active" href="#list-item-1">Item
+                <a class="list-group-item list-group-item-action active" href="#list-item-1">Item
                     1</a>
-                <a id="item2" class="list-group-item list-group-item-action" href="#list-item-2">Item2</a>
-                <a id="item3" class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
-                <a id="item4" class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-2">Item2</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-3">Item 3</a>
+                <a class="list-group-item list-group-item-action" href="#list-item-4">Item 4</a>
             </div>
-            <div data-spy="scroll" data-target="#list-example" data-offset="10"
+            <div data-spy="scroll" data-target="#list-example" data-offset="0"
                 class="scrollspy-example col-8 mx-auto scroll p-3 rounded">
                 <h4 id="list-item-1">Item 1</h4>
                 <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Velit delectus fugit sed quam perferendis
@@ -222,7 +227,7 @@
         </div>
         <div class="platform row">
             <div class="col-md-12 col-sm-12 text-center d-flex justify-content-center align-items-center">
-                <div class="desktop shadow-lg">
+                <div class="desktop shadow-lg boton-descarga">
                     <div class="d-flex flex-row justify-content-center">
                         <i class="fas fa-desktop fa-3x py-2 pr-3"></i>
                         <div class="text text-center d-flex justify-content-center align-items-center flex-column">
@@ -251,7 +256,7 @@
                 </div>
             </div>
             <div class="row">
-                <div class="col-lg-3 col-md-6 mt-3">
+                <div class="col-lg-3 col-md-6 mt-3 card-container">
                     <div class="card">
                         <div class="card-body">
                             <img src="./resources/Josue.jpeg" alt="Josué" class="img-fluid rounded-circle mb-3">
@@ -278,18 +283,17 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mt-3">
+                <div class="col-lg-3 col-md-6 mt-3 card-container">
                     <div class="card">
                         <div class="card-body">
                             <img src="./resources/Oliver.jpeg" alt="Josué" class="img-fluid rounded-circle mb-3">
-                            <h3>Josué Alemán</h3>
+                            <h3>Oliver Erazo</h3>
                             <h5>Backend Developer</h5>
-                            <p>Estudiante Olímpico de Informática
-                                Competitiva de El Salvador y entusiasta
-                                de las tecnologías, sobre todo se
-                                concentra en el área de creación de
-                                proyectos utilizando el Stack de MERN o
-                                C#, y en la creación de algoritmos.</p>
+                            <p>Se interesa por aprender cosas nuevas y el
+                                mundo de la programación, una nueva
+                                motivación para seguir aprendiendo más
+                                y mas y sobre todo ser un futuro
+                                programador.</p>
                             <div class="d-flex flex-row justify-content-center">
                                 <div class="p-4">
                                     <a href="#">
@@ -305,45 +309,40 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 mt-3">
-                    <div class="card">
-                        <div class="card-body">
-                            <img src="./resources/Cesar.jpeg" alt="Cesar" class="img-fluid rounded-circle mb-3">
-                            <h3>César Flores</h3>
-                            <h5>Backend Developer</h5>
-                            <p>Estudiante Olímpico de Informática
-                                Competitiva de El Salvador y entusiasta
-                                de las tecnologías, sobre todo se
-                                concentra en el área de creación de
-                                proyectos utilizando el Stack de MERN o
-                                C#, y en la creación de algoritmos.</p>
-                            <div class="d-flex flex-row justify-content-center">
-                                <div class="p-4">
-                                    <a href="#">
-                                        <i class="fab fa-linkedin"></i>
-                                    </a>
-                                </div>
-                                <div class="p-4">
-                                    <a href="#">
-                                        <i class="fab fa-github"></i>
-                                    </a>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 mt-3">
+                <div class="col-lg-3 col-md-6 mt-3 card-container">
                     <div class="card">
                         <div class="card-body">
                             <img src="./resources/Josue.jpeg" alt="Josué" class="img-fluid rounded-circle mb-3">
-                            <h3>Josué Alemán</h3>
+                            <h3>Oscar Orellana</h3>
+                            <h5>Frontend Developer</h5>
+                            <p>Desde siempre muy enfocado en el diseño y la parte gráfica de las
+                                cosas, en éste caso, en los sitios web y las aplicaciones elaboradas. Ve el desarrollo
+                                de Software como una herramienta complementaria muy importante y útil para su futuro.
+                            </p>
+                            <div class="d-flex flex-row justify-content-center">
+                                <div class="p-4">
+                                    <a href="#">
+                                        <i class="fab fa-linkedin"></i>
+                                    </a>
+                                </div>
+                                <div class="p-4">
+                                    <a href="#">
+                                        <i class="fab fa-github"></i>
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 mt-3 card-container">
+                    <div class="card">
+                        <div class="card-body">
+                            <img src="./resources/Cesar.jpeg" alt="Josué" class="img-fluid rounded-circle mb-3">
+                            <h3>César Flores</h3>
                             <h5>Backend Developer</h5>
-                            <p>Estudiante Olímpico de Informática
-                                Competitiva de El Salvador y entusiasta
-                                de las tecnologías, sobre todo se
-                                concentra en el área de creación de
-                                proyectos utilizando el Stack de MERN o
-                                C#, y en la creación de algoritmos.</p>
+                            <p>Estudiante Olímpico de informática Competitiva de El Salvador, participante de la IOI
+                                2020, ganador de una medalla de bronce en la CIIC 2019, estudiante del Ricaldone en
+                                desarrollo de software, busca cambiar el mundo con el poder de la programación.</p>
                             <div class="d-flex flex-row justify-content-center">
                                 <div class="p-4">
                                     <a href="#">
@@ -553,78 +552,72 @@
             </div>
             <div class="col-1"></div>
         </div>
-
-
-
     </div>
 
-
+    <!-- Footer -->
 
     <div class="container-fluid footer blue-bg" id="Contactanos">
 
         <div class="row align-items-center">
-            <!--Fila principal-->
 
-            <div class="col-6">
-                <!--Columna Izq-->
+            <div class="col col-izq col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6">
 
-                <div class="row">
-                    <!--Fila Logo y Menú-->
+                <div class="row row-logo-botones align-items-center justify-content-center">
 
                     <div class="col-6 col-logo">
                         <img src="resources/logo.jpeg" alt="Logo">
                     </div>
 
-                    <div class="col-6 col-btn-footer">
-                        <!--Botones-->
-                        <div class="btn-group-vertical">
-                            <button type="button" class="btn btn-footer"><a href="#Inicio">Inicio</a></button>
-                            <button type="button" class="btn btn-footer"><a href="#descargar">Descargar</a></button>
-                            <button type="button" class="btn btn-footer"><a
-                                    href="#documentacion">Documentación</a></button>
-                            <button type="button" class="btn btn-footer"><a href="#Sobre_Nosotros">Sobre
-                                    Nosotros</a></button>
-                        </div>
+                    <div class="col-btn col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 align-item-center">
+                        <button type="button" class="btn btn-footer"><a href="#">Inicio</a></button>
+                        <button type="button" class="btn btn-footer"><a href="#documentacion">Documentación</a></button>
+                        <button type="button" class="btn btn-footer"><a href="#descargar">Descargas</a></button>
+                        <button type="button" class="btn btn-footer"><a href="#nuestroequipo">Nuestro
+                                equipo</a></button>
                     </div>
 
-                    <div class="col-6 col-redes">
-                        <i class="fab fa-facebook fa-2x"></i>
-                        <i class="fab fa-instagram fa-2x"></i>
-                        <i class="fab fa-twitter fa-2x"></i>
-                        <i class="fab fa-youtube fa-2x"></i>
+                    <div class="row row-redes justify-content-center align-items-center">
+                        <div class="col col-redes">
+                            <i class="fab fa-facebook fa-2x"></i>
+                            <i class="fab fa-instagram fa-2x"></i>
+                            <i class="fab fa-twitter fa-2x"></i>
+                            <i class="fab fa-youtube fa-2x"></i>
+                        </div>
                     </div>
 
                 </div>
 
             </div>
 
-            <div class="col-4 col-form ml-auto mr-5 formulario">
-                <!--Columna Der-->
+            <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-6 col-form formulario">
                 <h3>¡Contáctanos!</h3>
                 <form>
 
                     <div class="form-group">
-                        <input type="text" class="form-control" id="nombreForm" placeholder="Nombre">
+                        <input type="text" class="form-control" id="nombreForm" required placeholder="Nombre">
                     </div>
 
                     <div class="form-group">
-                        <input type="text" class="form-control" id="apellidoForm" placeholder="Apellido">
+                        <input type="text" class="form-control" id="apellidoForm" required placeholder="Apellido">
                     </div>
 
                     <div class="form-group">
-                        <input type="email" class="form-control" id="emailForm" placeholder="Correo electrónico">
+                        <input type="email" class="form-control" id="emailForm" required
+                            placeholder="Correo electrónico">
                     </div>
 
                     <div class="form-group">
-                        <input type="text" class="form-control" id="telefonoForm" placeholder="Teléfono">
+                        <input type="text" class="form-control" id="telefonoForm" required
+                            placeholder="Número de teléfono">
                     </div>
 
                     <div class="form-group">
-                        <input type="ar" class="form-control" id="mensajeForm" placeholder="Ingrese su mensaje">
+                        <textarea name="mensaje" class="form-control" id="msgForm" cols="88" rows="3" required
+                            placeholder="Ingrese su mensaje"></textarea>
                     </div>
 
                     <div class="form-group">
-                        <button type="submit" class="btn btn-primary">Enviar</button>
+                        <button type="submit" class="btn btn-primary" id="btnForm">Enviar</button>
                     </div>
 
                 </form>
