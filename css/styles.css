@@ -533,7 +533,14 @@ h1 {
     width: 150px;
     height: 150px;
 }
-
+.requerimientos{
+    border: 1px solid black;
+}
+.tabla-text{
+    border: 1px solid black;
+    size: 14pt;
+    text-align: center;
+}
 .Person-title {
     color: #0E5075;
 }
