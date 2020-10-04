@@ -545,9 +545,19 @@ h1 {
 .requerimientos{
     border: 1px solid black;
 }
-.tabla-text{
+.titulo-tabla{
+    width: 50%;
+    height: 50px;
+    font-weight: bold;
     border: 1px solid black;
-    size: 14pt;
+    size: 16pt;
+    text-align: center;
+}
+.tabla-text{
+    height: 55px;
+    width: 50%;
+    border: 1px solid black;
+    font-size: 12pt;
     text-align: center;
 }
 .Person-title {
