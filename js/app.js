@@ -1,5 +1,5 @@
 var contactanos = new SmoothScroll('a[href*="#Contactanos"]');
-var documentacion = new SmoothScroll('input[href*="#Documentacion"]');
+var documentacion = new SmoothScroll('a[href*="#Documentacion"]');
 var preguntas = new SmoothScroll('a[href*="#Preguntas"]');
 var descarga = new SmoothScroll('a[href*="#Descargar"]');
 var sobreNosotros = new SmoothScroll('a[href*="#Sobre_Nosotros"]');
