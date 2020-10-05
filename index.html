@@ -27,30 +27,44 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarNavDropdown">
                 <div class="d-flex contendor-menu">
-                    <ul class="navbar-nav mt-2 mt-lg">
-                        <li class="nav-item">
-                            <a data-scroll id="inicio" type="button" class="botonesnav" href="#Inicio">INICIO</a>
+                    <ul class="navbar-nav mt-2 mt-lg Contendor-navbar">
+                        <li class="nav-item contendor-li">
+                            <a type="button" class="botonesnav" href="#Inicio">INICIO</a>
                         </li>
                         <li class="nav-item">
-                            <a data-scroll id="sobreNosotros" type="button" class=" botonesnav"
-                                href="#Sobre_Nosotros">SOBRE NOSOTROS</a>
+                            <a type="button" class="botonesnav" href="#Sobre_Nosotros">SOBRE NOSOTROS</a>
                         </li>
                         <li class="nav-item">
-                            <a data-scroll id="documentacion" type="button" class=" botonesnav"
-                                href="#Documentacion">DOCUMENTACIÓN</a>
+                            <a type="button" class="botonesnav" href="#documentacion">DOCUMENTACIÓN</a>
                         </li>
                         <li class="nav-item">
-                            <a data-scroll id="preguntas" type="button" class=" botonesnav" href="#Preguntas">PREGUNTAS
-                                FRECUENTES</a>
+                            <a type="button" class="botonesnav" href="#Preguntas">PREGUNTAS FRECUENTES</a>
                         </li>
                         <li class="nav-item">
-                            <a data-scroll id="contactanos" type="button" class="botonesnav"
-                                href="#Contactanos">CONTÁCTANOS</a>
+                            <a type="button" class="botonesnav" href="#Contactanos">CONTÁCTANOS</a>
+                        </li>
+                        <li class="nav-item nav-lenguaje">
+                            <div class="dropdown lenguaje">
+                                <button class="btn btn-lenguaje btn-default dropdown-toggle" type="button" data-toggle="dropdown">CAMBIAR IDIOMA</button>
+                                <ul class="dropdown-menu">
+                                    <li>
+                                        <div class="dropdown-opcion">
+                                            <img src="resources/spain.png" alt="Español"><a href="index.html">Español</a>
+                                        </div>
+                                    </li>
+                                    <li>
+                                        <div class="dropdown-opcion">
+                                            <img src="resources/usa.png" alt="Inglés"><a href="index-en.html">Inglés</a>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
+
         <div class="contenedor tope mb-5">
             <div id="carouselControls" class="carousel slide" data-ride="carousel">
                 <div class="carousel-inner">
@@ -110,108 +124,134 @@
         </div>
 
     </div>
-    <div class="container-fluid" id="Documentacion">
+    <div class="container-fluid Documentacion" id="Documentacion">
         <div class="row">
             <div class="col-12 d-flex justify-content-center">
                 <h3 class="titulo-documentacion">Documentación</h3>
             </div>
         </div>
         <div class="row d-flex flex-row documentacion mt-5">
-            <div id="list-example" class="list-group col-3 mx-auto d-flex justify-content-center align-item-center">
-                <a class="list-group-item active boton-animado" href="#list-item-1">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>    
-                    Requerimientos</a>
-                <a class="list-group-item boton-animado" href="#list-item-2">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span> Primer Uso</a>
-                <a class="list-group-item  boton-animado" href="#list-item-3">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>Usando SAGA</a>
-                <a class="list-group-item boton-animado" href="#list-item-4">
-                    <span></span>
-                    <span></span>
-                    <span></span>
-                    <span></span>Posibles errores</a>
+            <div id="list-example" class="list-group col-lg-4 col-md-12 mx-auto mb-3 bordes">
+                <a class="active boton-animado boton-documentacion" href="#list-item-1">
+                    <div class="caja">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>  
+                        <div class="vidrio"></div>
+                        <div class="caja2">                    Requerimientos</div>
+                    </div>  
+                </a>
+                <a class="boton-animado boton-documentacion" href="#list-item-2">
+                    <div class="caja">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>  
+                        <div class="vidrio"></div>
+                        <div class="caja2">                    Primer usos</div>
+                    </div>  
+                </a>
+                <a class=" boton-animado boton-documentacion" href="#list-item-3">
+                    <div class="caja">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>  
+                        <div class="vidrio"></div>
+                        <div class="caja2">                    Usando SAGA</div>
+                    </div>  
+                </a>
+                <a class="boton-animado boton-documentacion" href="#list-item-4">
+                    <div class="caja">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                        <span></span>  
+                        <div class="vidrio"></div>
+                        <div class="caja2">                    Posibles errores</div>
+                    </div>  
+                </a>
             </div>
             <div data-spy="scroll" data-target="#list-example" data-offset="0"
-                class="scrollspy-example col-8 mx-auto scroll p-3 rounded">
-                <h4 id="list-item-1" class="text-center"">Requerimientos</h4>
-                <div class="d-flex justify-content-center mt-3">
-                    <table class="requerimientos col-8">
-                        <thead>
-                            <tr>
-                                <th class="titulo-tabla">Componente</th>
-                                <th class="titulo-tabla">Requerimiento</th>
-                            </tr>
-                        </thead>
-                        <tbody>
-                            <tr>
-                                <td class="tabla-text">Procesador</td>
-                                <td class="tabla-text">1Ghz o superior</td>
-                            </tr>
-                            <tr>
-                                <td class="tabla-text">Pantalla</td>
-                                <td class="tabla-text">1366x768 o 1920x1080</td>
-                            </tr>
-                            <tr>
-                                <td class="tabla-text">RAM</td>
-                                <td class="tabla-text">1Ghz o superior</td>
-                            </tr>
-                            <tr>
-                                <td class="tabla-text">Almacenamiento</td>
-                                <td class="tabla-text">5GB o superior</td>
-                            </tr>
-                            <tr>
-                                <td class="tabla-text">Sistema operativo</td>
-                                <td class="tabla-text">Windows 7 o superior</td>
-                            </tr>
-                        </tbody>
-                    </table>
+                class="scrollspy-example col-md-12 col-lg-8 mx-auto scroll p-3 rounded mb-3">
+                <div class="caja">
+                    <div class="vidrio"></div>
+                    <div class="caja2">
+                        <h4 id="list-item-1" class="text-center">Requerimientos</h4>
+                        <div class="d-flex justify-content-center mt-3 mb-3 bordes">
+                            <table class="requerimientos col-8">
+                                <thead>
+                                    <tr>
+                                        <th class="titulo-tabla">Componente</th>
+                                        <th class="titulo-tabla">Requerimiento</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="tabla-text">Procesador</td>
+                                        <td class="tabla-text">1Ghz o superior</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tabla-text">Pantalla</td>
+                                        <td class="tabla-text">1366x768 o 1920x1080</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tabla-text">RAM</td>
+                                        <td class="tabla-text">1Ghz o superior</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tabla-text">Almacenamiento</td>
+                                        <td class="tabla-text">5GB o superior</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="tabla-text">Sistema operativo</td>
+                                        <td class="tabla-text">Windows 7 o superior</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        
+                        <h4 id="list-item-2" class="mt-5 text-center">Primer uso SAGA</h4>
+                        <p class="ml-4">Los pasos para usar a SAGA son muy sencillos, los cuales se detallan a continuación:</p>
+        
+                            <p class="mr-4 ml-5">1- Abre el programa</p>
+                            <p class="mr-4 ml-5">2- Se te pedirá el inicio del primer uso, por lo que tendrás que seguir las indicaciones que se te brindarán</p>
+                            <p class="mr-4 ml-5">3- Registra tu empresa, puedes empezar registrando contenedores que poseas.</p>
+                            <p class="mr-4 ml-5">4- ¡Listo!, ya puedes usar SAGA</p>
+                        <h4 id="list-item-3" class="text-center mb-3">Usando SAGA</h4>
+                        <h6 class="mt-3 mb-3">Pasos para registrar </h6>
+                        <p class="mr-5 ml-5">1-	Elige la opción en la que desees registrar, para esto tiene que dar click en el botón del SideBar que contenga tu elección.</p>
+                        <p class="mr-5 ml-5">2-	Aquí buscar el botón de registrar en la parte inferior.</p>
+                        <p class="mr-5 ml-5">3-	Luego llena los datos que se te pidan.</p>
+                        <p class="mr-5 ml-5">4-	Cuando finalices, dale clic en guardar y listo.</p>
+                        <h6 class="mt-3 mb-3">Pasos para actualizar un dato</h6>
+                        <p class="mr-5 ml-5">1-	Elige la opción que desees registrar, para esto tiene que dar click en el botón del SideBar que   contenga tu elección.</p>
+                        <p class="mr-5 ml-5">2-	Aquí buscar el botón de actualizar/eliminar en la parte inferior, aquí podrás hacer dichas acciones.</p>
+                        <p class="mr-5 ml-5">3-	Una vez aquí, tienes que seleccionar un dato ya existente, si es la primera vez que entras a SAGA, no habrá datos, por lo que tendrás que crear uno. </p>
+                        <p class="mr-5 ml-5">4-	Cuando lo selecciones se llenarán automáticamente los campos para que puedas modificarlo, puedes modificar todos los campos que el tipo de dato te permite.</p>
+                        <p class="mr-5 ml-5">5-	Cuando termines, Dale clic en actualizar</p>
+                        <h6 class="mt-3 mb-3">Pasos para eliminar un dato</h6>
+                        <p class="mr-5 ml-5">1-	Elige la opción que desees registrar, para esto tiene que dar click en el botón del SideBar que   contenga tu elección.</p>
+                        <p class="mr-5 ml-5">2-	Aquí buscar el botón de actualizar/eliminar en la parte inferior, aquí podrás hacer dichas acciones.</p>
+                        <p class="mr-5 ml-5">3-	Una vez aquí, tienes que seleccionar un dato ya existente, si es la primera vez que entras a SAGA, no habrá datos, por lo que tendrás que crear uno. </p>
+                        <p class="mr-5 ml-5">4-	Cuando lo selecciones dale clic al botón eliminar.</p>
+                        <p class="mr-5 ml-5">5-	Te pedirá una confirmación, si estas seguro que deseas eliminarlo, haz clic en sí.</p>
+                        <h4 id="list-item-4" class="mt-5 text-center">Posibles errores</h4>
+                        <p class="ml-4">Este tipo de error puede darse cuando:</p>
+        
+                            <p class="mr-4 ml-5">1-	Estas colocando un dato incorrecto o que el campo no lo admita. Por lo que verifica lo que te pide el campo</p>
+                            <p class="mr-4 ml-5">2-	No estas conectado a la base de datos. Revisa tu conexión, sino ponte en contacto con tu administrador</p>
+                    </div>
                 </div>
-                
-                <h4 id="list-item-2" class="mt-5 text-center">Primer uso SAGA</h4>
-                <p class="ml-4">Los pasos para usar a SAGA son muy sencillos, los cuales se detallan a continuación:</p>
-
-                    <p class="mr-4 ml-5">1- Abre el programa</p>
-                    <p class="mr-4 ml-5">2- Se te pedirá el inicio del primer uso, por lo que tendrás que seguir las indicaciones que se te brindarán</p>
-                    <p class="mr-4 ml-5">3- Registra tu empresa, puedes empezar registrando contenedores que poseas.</p>
-                    <p class="mr-4 ml-5">4- ¡Listo!, ya puedes usar SAGA</p>
-                <h4 id="list-item-3" class="text-center mb-3">Usando SAGA</h4>
-                <h6 class="mt-3 mb-3">Pasos para registrar </h6>
-                <p class="mr-5 ml-5">1-	Elige la opción en la que desees registrar, para esto tiene que dar click en el botón del SideBar que contenga tu elección.</p>
-                <p class="mr-5 ml-5">2-	Aquí buscar el botón de registrar en la parte inferior.</p>
-                <p class="mr-5 ml-5">3-	Luego llena los datos que se te pidan.</p>
-                <p class="mr-5 ml-5">4-	Cuando finalices, dale clic en guardar y listo.</p>
-                <h6 class="mt-3 mb-3">Pasos para actualizar un dato</h6>
-                <p class="mr-5 ml-5">1-	Elige la opción que desees registrar, para esto tiene que dar click en el botón del SideBar que   contenga tu elección.</p>
-                <p class="mr-5 ml-5">2-	Aquí buscar el botón de actualizar/eliminar en la parte inferior, aquí podrás hacer dichas acciones.</p>
-                <p class="mr-5 ml-5">3-	Una vez aquí, tienes que seleccionar un dato ya existente, si es la primera vez que entras a SAGA, no habrá datos, por lo que tendrás que crear uno. </p>
-                <p class="mr-5 ml-5">4-	Cuando lo selecciones se llenarán automáticamente los campos para que puedas modificarlo, puedes modificar todos los campos que el tipo de dato te permite.</p>
-                <p class="mr-5 ml-5">5-	Cuando termines, Dale clic en actualizar</p>
-                <h6 class="mt-3 mb-3">Pasos para Eliminar un dato</h6>
-                <p class="mr-5 ml-5">1-	Elige la opción que desees registrar, para esto tiene que dar click en el botón del SideBar que   contenga tu elección.</p>
-                <p class="mr-5 ml-5">2-	Aquí buscar el botón de actualizar/eliminar en la parte inferior, aquí podrás hacer dichas acciones.</p>
-                <p class="mr-5 ml-5">3-	Una vez aquí, tienes que seleccionar un dato ya existente, si es la primera vez que entras a SAGA, no habrá datos, por lo que tendrás que crear uno. </p>
-                <p class="mr-5 ml-5">4-	Cuando lo selecciones dale clic al botón eliminar.</p>
-                <p class="mr-5 ml-5">5-	Te pedirá una confirmación, si estas seguro que deseas eliminarlo, haz clic en sí.</p>
-                <h4 id="list-item-4" class="mt-5 text-center">Posibles errores</h4>
-                <p class="ml-4">Este tipo de error puede darse cuando:</p>
-
-                    <p class="mr-4 ml-5">1-	Estas colocando un dato incorrecto o que el campo no lo admita. Por lo que verifica lo que te pide el campo</p>
-                    <p class="mr-4 ml-5">2-	No estas conectado a la base de datos. Revisa tu conexión, sino ponte en contacto con tu administrador</p>
-            </div>
+                    
+             </div>
+               
         </div>
     </div>
 
     <section
-        class="section-3 container-fluid p-0 text-center parallax d-flex justify-content-center align-items-center flex-column">
+        class="section-3 container-fluid p-0 text-center parallax d-flex justify-content-center align-items-center flex-column" id="Descargar">
         <div class="row">
             <div class="col-md-12 col-sm-12">
                 <h1>Lleva tu empresa de almacenamiento al siguiente nivel </h1>
@@ -241,7 +281,7 @@
 
     <!--Nuestro Equipo-->
 
-    <section class="team" id="Sobre_Nosotros">
+    <section class="team mt-5" id="Sobre_Nosotros">
         <div class="container-fluid my-3 py-5 text-center">
             <div class="row mb-5">
                 <div class="col">
@@ -371,20 +411,18 @@
                             <img src="./resources/testimonial1.jpg" alt="testimonial1"
                                 class="user img-fluid img-thumbnail">
 
-                            <blockquote><i class="fas fa-quote-left quote"></i>
-                                Me gusta cómo el sistema se ajusta a mis necesidades sin problemas y cómo puedo aprender
-                                rápidamente gracias a su intuitivo y fácil de usar. </blockquote>
-                            <h3> Pablo Flores <span> Administrador de Ransa </span> </h3>
+                            <blockquote><i class="fas fa-quote-left quote"></i>Me gusta cómo el sistema se ajusta a mis necesidades sin problemas y 
+                                cómo puedo aprender rápidamente gracias a su intuitivo y fácil de usar. </blockquote>
+                            <h3>Pablo Flores, <span>administrador de Ransa</span></h3>
                         </div>
                     </div>
                     <div class="col-md-4 text-center">
                         <div class="profile d-flex justify-content-center flex-wrap">
                             <img src="./resources/testimonial2.jpg" alt="testimonial1"
                                 class="user img-fluid img-thumbnail">
-                            <blockquote><i class="fas fa-quote-left quote"></i>
-                                Con SAGA pude reducir el tiempo con el que realizaba los procesos en mi empresa,
-                                permitiéndome atender a más clientes-. </blockquote>
-                            <h3> Lucy Hernández <span> Supervisora ​​de Mr bodeguitas </span> </h3>
+                            <blockquote><i class="fas fa-quote-left quote"></i>Con SAGA pude reducir el tiempo con el que realizaba los procesos en 
+                                mi empresa, permitiéndome atender a más clientes.</blockquote>
+                            <h3>Lucy Hernández, <span>supervisora de Bodeguitas</span></h3>
                         </div>
                     </div>
 
@@ -392,11 +430,9 @@
                         <div class="profile d-flex justify-content-center flex-wrap">
                             <img src="./resources/testimonial3.jpg" alt="testimonial1"
                                 class="user img-fluid img-thumbnail">
-                            <blockquote><i class="fas fa-quote-left quote"></i>
-                                La verificación de los paquetes fue un proceso muy lento y muchas veces confuso, pero
-                                con SAGA todo eso se fue al olvido, ahora puedo verificarlo fácilmente sin ningún
-                                esfuerzo. </blockquote>
-                            <h3> Enrique Palacios <span> Cofundador de STYBA </span> </h3>
+                            <blockquote><i class="fas fa-quote-left quote"></i>La verificación de los paquetes fue un proceso muy lento y muchas veces 
+                                confuso, pero con SAGA todo eso quedó en el olvido. Ahora puedo verificarlo fácilmente sin ningún esfuerzo. </blockquote>
+                            <h3>Enrique Palacios, <span>cofundador de STYBA</span></h3>
                         </div>
                     </div>
                 </div>
@@ -561,9 +597,9 @@
 
                     <div class="col-btn col-xs-12 col-sm-12 col-md-12 col-lg-6 col-xl-6 align-item-center">
                         <button type="button" class="btn btn-footer"><a href="#">Inicio</a></button>
-                        <button type="button" class="btn btn-footer"><a href="#documentacion">Documentación</a></button>
-                        <button type="button" class="btn btn-footer"><a href="#descargar">Descargas</a></button>
-                        <button type="button" class="btn btn-footer"><a href="#nuestroequipo">Nuestro
+                        <button type="button" class="btn btn-footer"><a href="#Documentacion">Documentación</a></button>
+                        <button type="button" class="btn btn-footer"><a href="#Descargar">Descargas</a></button>
+                        <button type="button" class="btn btn-footer"><a href="#Sobre_Nosotros">Nuestro
                                 equipo</a></button>
                     </div>
 
