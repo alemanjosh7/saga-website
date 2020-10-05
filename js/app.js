@@ -1,9 +1,34 @@
 var contactanos = new SmoothScroll('a[href*="#Contactanos"]');
-var documentacion = new SmoothScroll('a[href*="#Documentacion"]');
+var documentacion = new SmoothScroll('input[href*="#Documentacion"]');
 var preguntas = new SmoothScroll('a[href*="#Preguntas"]');
+var descarga = new SmoothScroll('a[href*="#Descargar"]');
 var sobreNosotros = new SmoothScroll('a[href*="#Sobre_Nosotros"]');
-var inicio = new SmoothScroll('a[href*="#"]');
-var descargar = new SmoothScroll('a[href*="#Descargar"]');
+var inicio = new SmoothScroll('a[href*="#Inicio"]');
+
+function ToNuestroEquipo() {
+  var scroll = new SmoothScroll();
+  var anchor = document.querySelector('#Sobre_Nosotros');
+  scroll.animateScroll(anchor);
+}
+
+function ToInicio() {
+  var scroll = new SmoothScroll();
+  var anchor = document.querySelector('#Inicio');
+  scroll.animateScroll(anchor);
+}
+
+function ToDescargas() {
+  var scroll = new SmoothScroll();
+  var anchor = document.querySelector('#Descargar');
+  scroll.animateScroll(anchor);
+}
+
+function ToDocumentacion() {
+  var scroll = new SmoothScroll();
+  var anchor = document.querySelector('#Documentacion');
+  scroll.animateScroll(anchor);
+}
+
 (function($) {
   $(document).ready(function() {
     // Pause hero carousel
