@@ -94,7 +94,6 @@ body {
 
 h1 {
     text-align: center;
-
 }
 
 #skew1 {
@@ -450,9 +449,7 @@ h1 {
         align-items: center;
         width: 100%;
     } */
-    h1 {
-        font-size: 1pt;
-    }
+  
 
     .btn-documentacion {
         margin-bottom: 5px;
