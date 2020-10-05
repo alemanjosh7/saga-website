@@ -462,14 +462,6 @@ h1 {
     background: transparent;
     width: 80%;
 }
-.list-group-item.active {
-    z-index: 2;
-    color: #fff;
-}
-.list-group-item:first-child {
-    /* border-top-left-radius: .25rem; */
-    /* border-top-right-radius: .25rem; */
-}
 .list-group-item1 {
     position: relative;
     display: block;
