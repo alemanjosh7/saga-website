@@ -123,55 +123,102 @@
         </div>
 
     </div>
-    <div class="container-fluid" id="documentacion">
+
+    <div class="container-fluid" id="Documentacion">
         <div class="row">
             <div class="col-12 d-flex justify-content-center">
                 <h3 class="titulo-documentacion">Documentation</h3>
             </div>
         </div>
-        <div class="row documentacion">
-            <div class="col-3 d-flex flex-column align-items-center justify-content-center col-12 col-md-3">
-                <div id="list-example" class="list-group grupo">
-                    <a class="mt-3 boton-animado" href="#list-item-1">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>Item 1</a>
-                    <a class="mt-3 boton-animado" href="#list-item-2">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>Item2</a>
-                    <a class="mt-3 boton-animado" href="#list-item-3">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>Item 3</a>
-                    <a class=" mt-3 boton-animado" href="#list-item-4">
-                        <span></span>
-                        <span></span>
-                        <span></span>
-                        <span></span>Item 4</a>
-                </div>
+        <div class="row d-flex flex-row documentacion mt-5">
+            <div id="list-example" class="list-group col-3 mx-auto">
+                <a class="list-group-item active boton-animado" href="#list-item-1">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>    
+                    Requirements</a>
+                <a class="list-group-item boton-animado" href="#list-item-2">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span> First use</a>
+                <a class="list-group-item  boton-animado" href="#list-item-3">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>Using SAGA</a>
+                <a class="list-group-item boton-animado" href="#list-item-4">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                    <span></span>Possible errors</a>
             </div>
-            <div class="col-12 col-md-9">
-                <div data-spy="scroll" data-target="#list-example" data-offset="0" class="scrollspy-example">
-                    <h4 id="list-item-1">Item 1</h4>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Ullam id commodi eaque saepe
-                        exercitationem sed veniam impedit. Fugiat repellat atque aut natus quod, error consequuntur illo
-                        ut tempore minima in.
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. Rerum nam odio molestiae, minus odit
-                        corrupti deserunt ab deleniti exercitationem tempora omnis laborum consectetur quam laboriosam?
-                        Quam temporibus consequuntur nesciunt voluptatem.
-                        lorem*20
-                    </p>
-                    <h4 id="list-item-2">Item 2</h4>
-                    <p>...</p>
-                    <h4 id="list-item-3">Item 3</h4>
-                    <p>...</p>
-                    <h4 id="list-item-4">Item 4</h4>
-                    <p>...</p>
+            <div data-spy="scroll" data-target="#list-example" data-offset="0"
+                class="scrollspy-example col-8 mx-auto scroll p-3 rounded">
+                <h4 id="list-item-1" class="text-center">Requirements</h4>
+                <div class="d-flex justify-content-center mt-3">
+                    <table class="requerimientos col-8">
+                        <thead>
+                            <tr>
+                                <th class="titulo-tabla">Component</th>
+                                <th class="titulo-tabla">Requirement</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td class="tabla-text">Processor</td>
+                                <td class="tabla-text">1Ghz or better</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-text">Screen</td>
+                                <td class="tabla-text">1366x768 or 1920x1080</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-text">RAM</td>
+                                <td class="tabla-text">1Ghz or better</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-text">Storage</td>
+                                <td class="tabla-text">5GB o better</td>
+                            </tr>
+                            <tr>
+                                <td class="tabla-text">Operating system</td>
+                                <td class="tabla-text">Windows 7 or better</td>
+                            </tr>
+                        </tbody>
+                    </table>
                 </div>
+                
+                <h4 id="list-item-2" class="mt-5 text-center">SAGA first use</h4>
+                <p class="ml-4">The steps to use SAGA are very simple, which are detailed below:</p>
+
+                    <p class="mr-4 ml-5">1- Open the program.</p>
+                    <p class="mr-4 ml-5">2- You will be asked to start the first use, so you will have to follow the instructions that will be given to you.</p>
+                    <p class="mr-4 ml-5">3- Register your company, you can start registering containers you own.</p>
+                    <p class="mr-4 ml-5">4- Done! You can now use SAGA </p>
+                <h4 id="list-item-3" class="text-center mb-3">Using SAGA</h4>
+                <h6 class="mt-3 mb-3">Steps to register</h6>
+                <p class="mr-5 ml-5">1- Choose the option in which you want to register, for this you have to click on the button of the SideBar that contains your choice.</p>
+                <p class="mr-5 ml-5">2-	Here look for the register button at the bottom.</p>
+                <p class="mr-5 ml-5">3-	Then fill in the requested information.</p>
+                <p class="mr-5 ml-5">4-	When you finish, click on save and that's it.</p>
+                <h6 class="mt-3 mb-3"> Steps to update a data </h6>
+                <p class="mr-5 ml-5"> 1- Choose the option you want to register, for this you have to click on the button of the SideBar that contains your choice. </p>
+                <p class="mr-5 ml-5"> 2- Here, look for the update / delete button at the bottom, here you can do these actions. </p>
+                <p class="mr-5 ml-5"> 3- Once here, you have to select an existing data, if it is the first time you enter SAGA, there will be no data, so you will have to create one. </p>
+                <p class="mr-5 ml-5"> 4- When you select it, the fields will be automatically filled so that you can modify it, you can modify all the fields that the data type allows. </p>
+                <p class="mr-5 ml-5"> 5- When you finish, click on update </p>
+                <h6 class="mt-3 mb-3"> Steps to delete a data </h6>
+                <p class="mr-5 ml-5"> 1- Choose the option you want to register, for this you have to click on the button of the SideBar that contains your choice. </p>
+                <p class="mr-5 ml-5"> 2- Here, look for the update / delete button at the bottom, here you can do these actions. </p>
+                <p class="mr-5 ml-5"> 3- Once here, you have to select an existing data, if it is the first time you enter SAGA, there will be no data, so you will have to create one. </p>
+                <p class="mr-5 ml-5"> 4- When you select it, click the delete button. </p>
+                <p class="mr-5 ml-5"> 5- It will ask for a confirmation, if you are sure you want to delete it, click yes. </p>
+                <h4 id="list-item-4" class = "mt-5 text-center"> Possible errors </h4>
+                <p class="ml-4"> This type of error can occur when: </p>
+                <p class="mr-4 ml-5"> 1- You are entering an incorrect data or that the field does not support it. So check what the field asks you </p>
+                <p class="mr-4 ml-5"> 2- You are not connected to the database. Check your connection, if not contact your administrator </p>
             </div>
         </div>
     </div>
