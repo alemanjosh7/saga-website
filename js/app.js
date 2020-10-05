@@ -2,7 +2,8 @@ var contactanos = new SmoothScroll('a[href*="#Contactanos"]');
 var documentacion = new SmoothScroll('a[href*="#Documentacion"]');
 var preguntas = new SmoothScroll('a[href*="#Preguntas"]');
 var sobreNosotros = new SmoothScroll('a[href*="#Sobre_Nosotros"]');
-var sobreNosotros = new SmoothScroll('a[href*="#Inicio"]');
+var inicio = new SmoothScroll('a[href*="#"]');
+var descargar = new SmoothScroll('a[href*="#Descargar"]');
 (function($) {
   $(document).ready(function() {
     // Pause hero carousel
@@ -72,4 +73,33 @@ $('#collapse3').on('hide.bs.collapse', function () {
   element.classList.add("down");
   element.classList.remove("up");
   
+})
+
+
+// Footer y go-top-button
+
+function sweetalertclick() {}
+
+const nombreForm = document.getElementById("nombreForm");
+const apellidoForm = document.getElementById("apellidoForm");
+const emailForm = document.getElementById("emailForm");
+const telefonoForm = document.getElementById("telefonoForm");
+const mensajeForm = document.getElementById("mensajeForm");
+const btnForm = document.getElementById("btnForm");
+
+window.onscroll = function(){
+  if(document.documentElement.scrollTop > 1900){
+    document.querySelector('.go-top-container').classList.add('show');
+  }
+  else{
+    document.querySelector('.go-top-container').classList.remove('show');
+  }
+}
+
+document.querySelector('.go-top-container')
+.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  })
 })
