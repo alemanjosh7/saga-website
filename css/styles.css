@@ -913,7 +913,7 @@ blockquote {
     margin-bottom: 15px;
 }
 
-.btn-footer a {
+.col-btn a {
     text-decoration: none;
     color: #ffffff;
     font-size: 20px;
@@ -958,7 +958,77 @@ blockquote {
 .col-redes .fab {
     margin-right: 40px;
 }
+
+.go-top-container {
+    position: fixed;
+    bottom: 1px;
+    right: 1px;
+    width: 60px;
+    height: 60px;
+    z-index: -1;
+}
+
+.go-top-button {
+    background-color: #00254D;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: .2s;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: -1;
+}
+
+.go-top-button i {
+    position: absolute;
+    font-size: 15px;
+    top: 48%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    color: white;
+    transition: .2s;
+}
+
+.show {
+    z-index: 10;
+}
+
+.show .go-top-button{
+    animation: popup .3s ease-in-out;
+    width: 70px;
+    height: 70px;
+    z-index: 11;
+}
+
+.show i {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+@keyframes popup {
+    0%{
+        width: 0px;
+        height: 0px;
+    }
+    50%{
+        width: 80px;
+        height: 80px;
+    }
+    100%{
+        width: 60px;
+        height: 60px;
+    }
+}
+
+.bgwhite {
+    background-color: #fff;
+}
+
+.icolor{
+    color: #0069d9;
+}
+
 /* Fin de diseño de footer */
+
 
 .rotated {
     height: 75px;
@@ -1116,6 +1186,11 @@ blockquote {
 }
 
 /*Preguntas Frecuentes */
+
+#Preguntas {
+    background-color: #fff;
+}
+
 
 .up {
     animation: rotu 0.3s linear;
